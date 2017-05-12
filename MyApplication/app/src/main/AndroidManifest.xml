@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TaskActivity" />
-        <activity android:name=".MesterActivity"></activity>
+        <activity android:name=".MesterActivity" />
+        <activity android:name=".Loft6060b"></activity>
     </application>
 
 </manifest>

@@ -22,13 +22,14 @@
 
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="noob"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        />
+        <TextView
+            android:id="@+id/loft60x60"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textSize="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lofter 60x60" />
 
 
 
