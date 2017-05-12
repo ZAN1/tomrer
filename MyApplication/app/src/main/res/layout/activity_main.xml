@@ -33,13 +33,14 @@
             android:id="@+id/handvarker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:gravity="center_vertical"
+
             android:text="Håndværker"
+
+
             android:textAlignment="center"
-            android:textSize="42dp"
-
-
-            />
+            android:textSize="42dp" />
 
         <TextView
             android:id="@+id/mester"
