@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_weight="100"
+
+
+    >
+
+
+
+
+    <TextView
+        
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_weight="100"
+        android:textColor="#ffffff"
+        android:background="#ffb31a"
+        android:text="Tømrer Tool"
+        android:textSize="18dp"
+        >
+
+    </TextView>
+
+
+    </LinearLayout>
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/newicon" />
+</RelativeLayout>
+</LinearLayout>
+
+
+

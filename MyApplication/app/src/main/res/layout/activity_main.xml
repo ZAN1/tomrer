@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.klisterdk.tomrer.MainActivity"
+    android:weightSum="100"
+    android:orientation="vertical"
+
+
+    >
+
+
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="100"
+
+        >
+
+
+        <TextView
+            android:id="@+id/handvarker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Håndværker"
+            android:textAlignment="center"
+            android:textSize="42dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/mester"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textSize="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mester/Konstruktør" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
