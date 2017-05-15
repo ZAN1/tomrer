@@ -14,59 +14,62 @@
         android:layout_width="wrap_content"/>
 
     <LinearLayout
-        android:layout_weight="100"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:layout_weight="100"
+        android:orientation="vertical">
 
 
-
-    <TextView
-
-        android:gravity="center_vertical"
-        android:textAlignment="center"
-        android:textSize="42dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Væg mål NR. 1 i Meter" />
-
-        <EditText
-
-            android:gravity="center_vertical"
-            android:textAlignment="center"
-            android:textSize="42dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Indsæt mål her"
-            android:background="#0000ff"
-            />
         <TextView
 
-            android:gravity="center_vertical"
-            android:textAlignment="center"
-            android:textSize="42dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Væg mål NR. 2 i Meter" />
+            android:gravity="center_vertical"
+            android:text="Væg mål NR. 1 i Meter"
+            android:textAlignment="center"
+            android:textSize="42dp" />
 
         <EditText
-
+            android:id="@+id/wall1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000ff"
             android:gravity="center_vertical"
+            android:hint="Indsæt mål her"
             android:textAlignment="center"
             android:textSize="42dp"
+            android:inputType="number"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Væg mål NR. 2 i Meter"
+            android:textAlignment="center"
+            android:textSize="42dp" />
+
+        <EditText
+            android:id="@+id/wall2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ff0000"
-            android:hint="Indsæt mål her" />
-        <Button
             android:gravity="center_vertical"
+            android:hint="Indsæt mål her"
             android:textAlignment="center"
             android:textSize="42dp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/hent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="matrialer"/>
+            android:gravity="center_vertical"
+            android:text="Hent mål"
+            android:textAlignment="center"
+            android:textSize="42dp"
+            android:textAllCaps="false"/>
 
-</LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

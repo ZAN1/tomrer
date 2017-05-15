@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <!-- //alpha program T Tool (Tømrer Tool) name can change do NOT!!! USE!!! WITHOUT!!!! PERMISSION!! by Christian Frederiksen
+   COPYRIGHT by Christian Frederiksen do not share the code or program, do not take pictures/ video of the program or send pictures / video of the program or code-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall1i"
+                android:layout_weight="0.5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall2i"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Kantplade"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/kanttext"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#3333ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/kantplade2"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#e60000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/kantplade1"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#3333ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/kantplade2v2"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#e60000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/kantplade1v2"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="antalplader"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/antalp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#3333ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/antalplader2"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#e60000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/antalplader1"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#3333ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/antalplader2v2"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#e60000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/antalplader1v2"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Midt af Væg"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/kanttext"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/punktmid"
+                android:layout_weight="0.5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/punktmidv2"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="antalskinner og loftsplader"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/antalp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="antal plader"
+                android:background="#0099ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/bla"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="lille skinne"
+                android:background="#666699"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/red"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="mellem skinne"
+                android:background="#339966"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/blav2"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="stor skinne"
+                android:background="#800080"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/redv2"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 1 blå"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall1i"
+                android:layout_weight="0.5"
+                android:background="#3333ff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 2 blå"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall2i"
+                android:layout_weight="0.5"
+                android:background="#3333ff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="x"
+                android:background="#0099ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/blabla1"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="x"
+                android:background="#666699"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label7"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="x"
+                android:background="#339966"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label8"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="x"
+                android:background="#800080"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label10"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 1 rød"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall1i"
+                android:layout_weight="0.5"
+                android:background="#e60000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 2 rød"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall2i"
+                android:layout_weight="0.5"
+                android:background="#e60000" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xx"
+                android:background="#0099ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/blas"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xx"
+                android:background="#666699"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label17"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xx"
+                android:background="#339966"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label18"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="xx"
+                android:background="#800080"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label19"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 1 rød"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall1i"
+                android:layout_weight="0.5"
+                android:background="#e60000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 2 blå"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall2i"
+                android:layout_weight="0.5"
+                android:background="#3333ff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xxx"
+                android:background="#0099ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/redbla1"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xxx"
+                android:background="#666699"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label14"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xxx"
+                android:background="#339966"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label16"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="xxx"
+                android:background="#800080"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label15"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 1 blå"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall1i"
+                android:layout_weight="0.5"
+                android:background="#3333ff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Væg 2 rød"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/wall2i"
+                android:layout_weight="0.5"
+                android:background="#e60000" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xxx"
+                android:background="#0099ff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/blared1"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xxx"
+                android:background="#666699"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label11"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="xxx"
+                android:background="#339966"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label12"
+                android:layout_weight="0.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="xxx"
+                android:background="#800080"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/label13"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
