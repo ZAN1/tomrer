@@ -84,19 +84,30 @@ public class MesterResult extends AppCompatActivity {
         List<Double> fromUregn = addition.Uregn(wall12);
         List<Double> fromUregn2 = addition.Uregn2(wall12);
         //  punktmid.Text = Math.Round(fromUregn[0], 3).ToString();
-        DecimalFormat format = new DecimalFormat("#,###");
-        double dd =Math.round(fromUregn.get(4));
-        String kantplade1Text = String.valueOf(Double.valueOf(format.format(dd)));
+        DecimalFormat format = new DecimalFormat("#.000");
+        double dd1 = fromUregn.get(4);
+            format.format(dd1);
+            //Log.i("log","log" + dd1);
+            //double dd =Math.round(fromUregn.get(4)));
 
+        String kantplade1Text = String.valueOf(dd1);
+
+
+            DecimalFormat format1 = new DecimalFormat("#.000");
         kantPlade1.setText(kantplade1Text);
+        double ss1 = fromUregn2.get(5);
+            format1.format(ss1);
 
-        double ss =Math.round(fromUregn2.get(5));
-        String kantPlade2Text = String.valueOf(Double.valueOf(format.format(ss)));
 
 
+        // double ss =format.format(fromUregn2.get(5));
+            //format.format(ss);
+       String kantPlade2Text = String.valueOf(ss1);
+                //kantPlade2Text
+        kantplade2.setText(kantPlade2Text);
         //     antalplader1.Text = Math.Round(fromUregn[5], 3).ToString();
         //punktmid.Text = fromUregn[3].ToString();
-        kantplade2.setText(kantPlade2Text); //= Math.Round(fromUregn2[5], 3).ToString();
+      ///  kantplade2.setText(kantPlade2Text); //= Math.Round(fromUregn2[5], 3).ToString();
         //   antalplader.Text = Math.Round(fromUregn2[6], 3).ToString();
         // kantplade2.Text = fromUregn2[].ToString();
         // kantplade2.Text = fromUregn2[].ToString();
@@ -104,14 +115,20 @@ public class MesterResult extends AppCompatActivity {
        // double v1 = Double.parseDouble(wall13);
        // double v2 = Double.parseDouble(wall12);
 
-        List<Double> formUregn2wall2 = addition.Uregn2wall2(wall12);
-        double ddv2 = Math.round(formUregn2wall2.get(5));
-        String kantplade1v2Text = String.valueOf(Double.valueOf(format.format(ddv2)));
+        //List<Double> formUregn2wall2 = addition.Uregn2(wall12);
+        //double ddv2 = Math.round(Double.valueOf(format.format(formUregn2wall2.get(5))));
+            DecimalFormat format2 = new DecimalFormat("#.000");
+        double ddv2 = fromUregn.get(4);
+            format2.format(ddv2);
+
+            String kantplade1v2Text = String.valueOf(ddv2);
 
         kantplade1v2.setText(kantplade1v2Text);
-
-           double ssv2 =Math.round(fromUregn2.get(5));
-           String kantPlade2v2Text = String.valueOf(Double.valueOf(format.format(ssv2)));
+            DecimalFormat format3 = new DecimalFormat("#.000");
+            double ssv2 = fromUregn2.get(5);
+            format3.format(ssv2);
+           //double ssv2 =Math.round(Double.valueOf(format.format(fromUregn2.get(5))));
+           String kantPlade2v2Text = String.valueOf(ssv2);
 
            kantplade2v2.setText(kantPlade2v2Text);
 
