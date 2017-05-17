@@ -84,7 +84,7 @@ public class MesterResult extends AppCompatActivity {
         List<Double> fromUregn = addition.Uregn(wall12);
         List<Double> fromUregn2 = addition.Uregn2(wall12);
         //  punktmid.Text = Math.Round(fromUregn[0], 3).ToString();
-        DecimalFormat format = new DecimalFormat("0.000#");
+        DecimalFormat format = new DecimalFormat("#0.000");
         double dd1 = fromUregn.get(4);
          String ddd1 =  format.format(dd1);
             //Log.i("log","log" + dd1);
@@ -93,7 +93,7 @@ public class MesterResult extends AppCompatActivity {
        // String kantplade1Text = String.valueOf(dd1);
 
 
-            DecimalFormat format1 = new DecimalFormat("0.000#");
+            DecimalFormat format1 = new DecimalFormat("#0.000");
         kantPlade1.setText(ddd1);
         double ss1 = fromUregn2.get(5);
         String sss1 =   format1.format(ss1);
@@ -117,14 +117,14 @@ public class MesterResult extends AppCompatActivity {
 
         //List<Double> formUregn2wall2 = addition.Uregn2(wall12);
         //double ddv2 = Math.round(Double.valueOf(format.format(formUregn2wall2.get(5))));
-            DecimalFormat format2 = new DecimalFormat("0.000#");
+            DecimalFormat format2 = new DecimalFormat("#0.000");
         double ddv2 = fromUregn.get(4);
            String rr1 = format2.format(ddv2);
 
            // String kantplade1v2Text = String.valueOf(rr1);
 
         kantplade1v2.setText(rr1);
-            DecimalFormat format3 = new DecimalFormat("0.000#");
+            DecimalFormat format3 = new DecimalFormat("#0.000");
             double  ssv2 = fromUregn2.get(5);
          String rr = format3.format(ssv2);
            //double ssv2 =Math.round(Double.valueOf(format.format(fromUregn2.get(5))));
