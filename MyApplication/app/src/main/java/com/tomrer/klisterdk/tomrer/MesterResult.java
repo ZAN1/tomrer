@@ -1,11 +1,11 @@
-package com.example.klisterdk.tomrer;
+package com.tomrer.klisterdk.tomrer;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.example.klisterdk.tomrer.get_set.SwapMain;
+import com.tomrer.klisterdk.tomrer.get_set.SwapMain;
 
 import java.text.DecimalFormat;
 import java.util.List;
@@ -39,6 +39,8 @@ public class MesterResult extends AppCompatActivity {
 
        String wall12 = SwapMain.getWall12();
         String wall13 = SwapMain.getWall13();
+
+
         Log.i("wall12", "fff" + wall12);
         Log.i("wall13", "ggg" + wall13);
         //wall12 = swap.getWall1();
@@ -239,7 +241,8 @@ public class MesterResult extends AppCompatActivity {
 
 
             }*/
-       }
+
+        }
 
     }
 }

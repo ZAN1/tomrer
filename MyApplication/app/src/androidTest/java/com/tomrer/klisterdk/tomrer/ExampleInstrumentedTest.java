@@ -1,4 +1,4 @@
-package com.example.klisterdk.tomrer;
+package com.tomrer.klisterdk.tomrer;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.klisterdk.tomrer", appContext.getPackageName());
+        assertEquals("com.tomrer.klisterdk.tomrer", appContext.getPackageName());
     }
 }

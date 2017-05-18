@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.klisterdk.tomrer.Loft6060b"
+    tools:context="com.tomrer.klisterdk.tomrer.Loft6060b"
     android:weightSum="100"
     android:orientation="vertical">
 
@@ -38,7 +38,8 @@
             android:hint="Indsæt mål her"
             android:textAlignment="center"
             android:textSize="42dp"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal"
+           />
 
         <TextView
 
@@ -58,7 +59,8 @@
             android:hint="Indsæt mål her"
             android:textAlignment="center"
             android:textSize="42dp"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal"
+           />
 
         <Button
             android:id="@+id/hent"

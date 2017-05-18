@@ -1,4 +1,4 @@
-package com.example.klisterdk.tomrer;
+package com.tomrer.klisterdk.tomrer;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

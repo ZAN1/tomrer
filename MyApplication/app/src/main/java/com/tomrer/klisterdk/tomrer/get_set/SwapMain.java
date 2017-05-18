@@ -1,4 +1,4 @@
-package com.example.klisterdk.tomrer.get_set;
+package com.tomrer.klisterdk.tomrer.get_set;
 
 
 /**

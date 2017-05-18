@@ -1,4 +1,4 @@
-package com.example.klisterdk.tomrer;
+package com.tomrer.klisterdk.tomrer;
 
 import org.junit.Test;
 

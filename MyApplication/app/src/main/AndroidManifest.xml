@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.klisterdk.tomrer">
+    package="com.tomrer.klisterdk.tomrer">
 
     <application
         android:allowBackup="true"
@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.tomrer.klisterdk.tomrer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TaskActivity" />
-        <activity android:name=".MesterActivity" />
-        <activity android:name=".Loft6060b" />
-        <activity android:name=".MesterResult">
+        <activity android:name="com.tomrer.klisterdk.tomrer.TaskActivity" />
+        <activity android:name="com.tomrer.klisterdk.tomrer.MesterActivity" />
+        <activity android:name="com.tomrer.klisterdk.tomrer.Loft6060b" />
+        <activity android:name="com.tomrer.klisterdk.tomrer.MesterResult">
 
         </activity>
         <activity
-            android:name=".addition"
+            android:name="com.tomrer.klisterdk.tomrer.addition"
             android:label="@string/app_name"  >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

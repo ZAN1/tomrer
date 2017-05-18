@@ -1,4 +1,4 @@
-package com.example.klisterdk.tomrer;
+package com.tomrer.klisterdk.tomrer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,14 +24,11 @@ public class addition extends MainActivity{
 
     public static List<Double> Uregn(String wall12)
     {
-
         Uregn1 = new ArrayList<Double>();
-        double  b, c, d, e, f, g, h, i;
+        double b, c, d, e, f, g, h, i;
 
 
         double a = Double.parseDouble(wall12);
-
-
 
 
         b = a / 2;//finder midt af væg
@@ -45,9 +42,6 @@ public class addition extends MainActivity{
         i = h - 1;//antal spærrum
 
 
-
-
-
         Uregn1.add(b);//0
         Uregn1.add(c);//1
         Uregn1.add(d);//2
@@ -58,6 +52,8 @@ public class addition extends MainActivity{
         Uregn1.add(h);//7
         Uregn1.add(i);//8
         return Uregn1;
+
+
 
 
 

@@ -1,4 +1,4 @@
-package com.example.klisterdk.tomrer;
+package com.tomrer.klisterdk.tomrer;
 
 /**
  * Created by Christian on 14-May-17.
