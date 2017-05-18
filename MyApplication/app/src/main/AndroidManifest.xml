@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tomrer.klisterdk.tomrer">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,33 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name="com.tomrer.klisterdk.tomrer.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.tomrer.klisterdk.tomrer.TaskActivity" />
-        <activity android:name="com.tomrer.klisterdk.tomrer.MesterActivity" />
-        <activity android:name="com.tomrer.klisterdk.tomrer.Loft6060b" />
-        <activity android:name="com.tomrer.klisterdk.tomrer.MesterResult">
-
-        </activity>
+        <activity android:name=".TaskActivity" />
+        <activity android:name=".MesterActivity" />
+        <activity android:name=".Loft6060b" />
+        <activity android:name=".MesterResult"></activity>
         <activity
-            android:name="com.tomrer.klisterdk.tomrer.addition"
-            android:label="@string/app_name"  >
+            android:name=".addition"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="af0937dd1289228bbcb120eb756858f9489d0759"
-            />
+            android:value="af0937dd1289228bbcb120eb756858f9489d0759" />
 
-
+        <activity android:name=".MesterCategory"></activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>
