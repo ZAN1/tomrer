@@ -21,7 +21,7 @@
         <activity android:name=".TaskActivity" />
         <activity android:name=".MesterActivity" />
         <activity android:name=".Loft6060b" />
-        <activity android:name=".MesterResult"></activity>
+        <activity android:name=".MesterResult" />
         <activity
             android:name=".addition"
             android:label="@string/app_name">
@@ -36,7 +36,9 @@
             android:name="io.fabric.ApiKey"
             android:value="af0937dd1289228bbcb120eb756858f9489d0759" />
 
-        <activity android:name=".MesterCategory"></activity>
+        <activity android:name=".MesterCategory" />
+        <activity android:name=".Loft6060b1" />
+        <activity android:name=".HandResult"></activity>
     </application>
 
 </manifest>
