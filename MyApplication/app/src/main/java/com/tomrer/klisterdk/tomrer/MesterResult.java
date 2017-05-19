@@ -3,6 +3,8 @@ package com.tomrer.klisterdk.tomrer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tomrer.klisterdk.tomrer.get_set.SwapMain;
@@ -12,8 +14,10 @@ import java.util.List;
 
 public class MesterResult extends AppCompatActivity {
 
-
-
+    private boolean t1Selected = false;
+    private boolean t2Selected = false;
+    private boolean tt1Selected = false;
+    private boolean tt2Selected = false;
     @Override
    /* protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -242,6 +246,72 @@ public class MesterResult extends AppCompatActivity {
 
             }*/
 
+            final ImageView image = (ImageView) findViewById(R.id.t1);
+            final ImageView image1 = (ImageView) findViewById(R.id.t2);
+            final ImageView image2 = (ImageView) findViewById(R.id.tt1);
+            final ImageView image3 = (ImageView) findViewById(R.id.tt2);
+            image.setOnClickListener(new View.OnClickListener() {
+                //private Rect rect;
+
+                @Override
+                public void onClick(View v) {
+//
+//                if (t1Selected) {
+//                        // Unselect
+//                    image.setColorFilter(Color.argb(0,0,0,0));
+//                        t1Selected = false;
+//                    } else {
+//                        // Select
+//                    image.setColorFilter(Color.argb(88,255,255,128));
+//                        t1Selected = true;
+//
+//                    }
+
+                    t1Selected = HighlightMesterResult.highlight(image, t1Selected);
+
+//                    if(event.getAction() == MotionEvent.ACTION_DOWN){
+//                        image.setColorFilter(Color.argb(88,255,255,128));
+//                        rect = new Rect(v.getLeft(),v.getTop(),v.getRight(),v.getBottom());
+//
+//
+//                    }
+//                    if(event.getAction() == MotionEvent.ACTION_UP){
+//
+//                        image.setColorFilter(Color.argb(0,0,0,0));
+//
+//                    }
+//                    if(event.getAction() == MotionEvent.ACTION_MOVE){
+//
+//                        if (!rect.contains(v.getLeft() + (int) event.getX(), v.getTop() + (int) event.getY())){
+//
+//                            image.setColorFilter(Color.argb(0,0,0,0));
+//
+//                        }
+
+                    }
+
+
+
+            });
+                image1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        t2Selected = HighlightMesterResult.highlight(image1, t2Selected);
+
+                    }
+                });
+            image2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    tt1Selected = HighlightMesterResult.highlight(image2, tt1Selected);
+                }
+            });
+            image3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    tt2Selected = HighlightMesterResult.highlight(image3, tt2Selected);
+                }
+            });
         }
 
     }

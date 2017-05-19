@@ -83,7 +83,7 @@
                 android:src="@drawable/t2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/imageView1"
+                android:id="@+id/t2"
                 android:layout_weight="0.5"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
@@ -96,7 +96,7 @@
                 android:gravity="center"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
-                android:id="@+id/imageView2"
+                android:id="@+id/t1"
                 android:layout_weight="0.5"
                 android:background="@android:color/holo_red_dark" />
         </LinearLayout>
@@ -160,20 +160,20 @@
             android:layout_weight="1"
             android:gravity="center">
             <ImageView
-                android:src="@drawable/t2"
+                android:src="@drawable/tt2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/imageView3"
+                android:id="@+id/tt2"
                 android:layout_weight="0.5"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 android:gravity="center"
                 android:background="@android:color/holo_blue_dark" />
             <ImageView
-                android:src="@drawable/t1"
+                android:src="@drawable/tt1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView4"
+                android:id="@+id/tt1"
                 android:gravity="center"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
