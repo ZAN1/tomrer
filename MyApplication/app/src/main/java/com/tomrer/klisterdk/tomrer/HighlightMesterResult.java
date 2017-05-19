@@ -1,6 +1,7 @@
 package com.tomrer.klisterdk.tomrer;
 
 import android.graphics.Color;
+import android.widget.Button;
 import android.widget.ImageView;
 
 /**
@@ -9,7 +10,7 @@ import android.widget.ImageView;
 
 public class HighlightMesterResult {
 
-    public static boolean highlight(ImageView image, boolean isSelected) {
+    public static boolean highlight(ImageView image, boolean isSelected)  {
 
 
         if (isSelected) {
@@ -22,6 +23,35 @@ public class HighlightMesterResult {
             image.setColorFilter(Color.argb(88, 255, 255, 128));
            return true;
 
+        }
+
+    }
+
+    public static boolean unHighlight(ImageView image1, boolean unSelected)  {
+
+
+        if (unSelected) {
+            // Unselect
+            image1.setColorFilter(Color.argb(0, 0, 0, 0));
+
+            return false;
+        } else {
+            // Select
+
+            return false;
+        }
+
+    }
+
+    public static boolean choise(Button send , boolean choises){
+
+        if (choises){
+
+            return true;
+
+        }else {
+
+            return false;
         }
     }
 

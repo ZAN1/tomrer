@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
+<!-- //alpha program T Tool (TÃ¸mrer Tool) name can change do NOT!!! USE!!! WITHOUT!!!! PERMISSION!! by Christian Frederiksen
+ COPYRIGHT by Christian Frederiksen do not share the code or program, do not take pictures/ video of the program or send pictures / video of the program or code-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <include layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Du valgte "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dp" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Kant af plade til midt af væg nr 1 og"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dp" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Midt af plade på midt af væg nr 2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="antalskinner og loftsplader"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/antalp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="antal plader"
+                    android:layout_margin="0dp"
+                    android:textSize="30dp"
+                    android:background="#0099ff"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/bla"
+                    android:layout_weight="0.5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:text="lille skinne"
+                    android:background="#666699"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/red"
+                    android:layout_weight="0.5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="mellem skinne"
+                    android:textSize="30dp"
+                    android:background="#339966"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/blav2"
+                    android:layout_weight="0.5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:text="stor skinne"
+                    android:background="#800080"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/redv2"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:text="antal plader"
+                    android:layout_margin="0dp"
+                    android:textSize="30dp"
+                    android:background="#0099ff"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/blabla1"
+                    android:layout_weight="0.5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:text="lille skinne"
+                    android:background="#666699"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/label7"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="mellem skinne"
+                    android:textSize="30dp"
+                    android:background="#339966"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/label8"
+                    android:layout_weight="0.5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:text="stor skinne"
+                    android:background="#800080"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/label10"
+                    android:layout_weight="0.5" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

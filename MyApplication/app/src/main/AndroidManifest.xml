@@ -38,7 +38,8 @@
 
         <activity android:name=".MesterCategory" />
         <activity android:name=".Loft6060b1" />
-        <activity android:name=".HandResult"></activity>
+        <activity android:name=".HandResult" />
+        <activity android:name=".MesterMaterialer"></activity>
     </application>
 
 </manifest>

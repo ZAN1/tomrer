@@ -1,11 +1,14 @@
 package com.tomrer.klisterdk.tomrer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.tomrer.klisterdk.tomrer.get_set.SwapMain;
 
@@ -245,7 +248,7 @@ public class MesterResult extends AppCompatActivity {
 
 
             }*/
-
+            final Button hentMaterialer = (Button) findViewById(R.id.mestermaterialer);
             final ImageView image = (ImageView) findViewById(R.id.t1);
             final ImageView image1 = (ImageView) findViewById(R.id.t2);
             final ImageView image2 = (ImageView) findViewById(R.id.tt1);
@@ -268,6 +271,7 @@ public class MesterResult extends AppCompatActivity {
 //                    }
 
                     t1Selected = HighlightMesterResult.highlight(image, t1Selected);
+                    t2Selected = HighlightMesterResult.unHighlight(image1, t2Selected);
 
 //                    if(event.getAction() == MotionEvent.ACTION_DOWN){
 //                        image.setColorFilter(Color.argb(88,255,255,128));
@@ -297,21 +301,64 @@ public class MesterResult extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         t2Selected = HighlightMesterResult.highlight(image1, t2Selected);
-
+                        t1Selected = HighlightMesterResult.unHighlight(image, t1Selected);
                     }
                 });
             image2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    tt1Selected = HighlightMesterResult.highlight(image2, tt1Selected);
+                    tt1Selected = HighlightMesterResult.highlight(image2, tt1Selected );
+                    tt2Selected = HighlightMesterResult.unHighlight(image3, tt2Selected);
+
                 }
             });
             image3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     tt2Selected = HighlightMesterResult.highlight(image3, tt2Selected);
+
+                    tt1Selected = HighlightMesterResult.unHighlight(image2, tt1Selected);
+
+            }
+            });
+//           final boolean redred = false;
+//            final   boolean redbla = false;
+//            final   boolean blared = false;
+//               boolean blabla = false;
+            hentMaterialer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent materialer = new Intent(MesterResult.this,MesterMaterialer.class);
+                    Intent nonclik = new Intent(MesterResult.this,MesterResult.class);
+                    if (t2Selected && tt2Selected){
+                            SwapMain swap = new SwapMain();
+
+                        boolean blabla = true;
+                            swap.setBlabla(blabla);
+                        startActivity(materialer);
+
+                    }else if (t1Selected && tt1Selected){
+                        SwapMain swap = new SwapMain();
+                        String  redred = "1";
+                        startActivity(materialer);
+                    }else if (tt1Selected && t2Selected){
+                        SwapMain swap = new SwapMain();
+                        String  blared = "1";
+                        startActivity(materialer);
+                    }else if (t1Selected && tt2Selected){
+                        SwapMain swap = new SwapMain();
+                        String  redbla = "1";
+                        startActivity(materialer);
+                    }else{
+
+                        Toast.makeText(MesterResult.this ,"Maker et billede ved væg nr 1 & væg nr 2.",Toast.LENGTH_LONG).show();
+                        startActivity(nonclik);
+                    }
+
+
                 }
             });
+
         }
 
     }

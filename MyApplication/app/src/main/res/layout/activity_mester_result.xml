@@ -188,11 +188,11 @@
         android:layout_weight="1"
         android:gravity="center">
         <Button
-            android:id="@+id/button"
+            android:id="@+id/mestermaterialer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="Button"
+            android:text="Hent Materiale Liste"
             android:layout_margin="0dp"/>
         </LinearLayout>
     </LinearLayout>
