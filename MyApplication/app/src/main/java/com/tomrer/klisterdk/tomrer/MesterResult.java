@@ -335,25 +335,44 @@ public class MesterResult extends AppCompatActivity {
 
                         boolean blabla = true;
                             swap.setBlabla(blabla);
+                        swap.setBlared(false);
+                        swap.setRedbla(false);
+                        swap.setRedred(false);
                         startActivity(materialer);
 
                     }else if (t1Selected && tt1Selected){
                         SwapMain swap = new SwapMain();
-                        String  redred = "1";
+                        boolean redred = true;
+                        swap.setBlabla(false);
+                        swap.setBlared(false);
+                        swap.setRedbla(false);
+
+                        swap.setRedred(redred);
                         startActivity(materialer);
-                    }else if (tt1Selected && t2Selected){
+                    }else if (t2Selected && tt1Selected ){
                         SwapMain swap = new SwapMain();
-                        String  blared = "1";
+                        boolean blared = true;
+                        swap.setBlabla(false);
+                        swap.setBlared(blared);
+
+                        swap.setRedbla(false);
+                        swap.setRedred(false);
                         startActivity(materialer);
                     }else if (t1Selected && tt2Selected){
                         SwapMain swap = new SwapMain();
-                        String  redbla = "1";
+                        boolean redbla = true;
+                        swap.setBlabla(false);
+                        swap.setBlared(false);
+
+                        swap.setRedred(false);
+                        swap.setRedbla(redbla);
                         startActivity(materialer);
                     }else{
 
                         Toast.makeText(MesterResult.this ,"Maker et billede ved væg nr 1 & væg nr 2.",Toast.LENGTH_LONG).show();
                         startActivity(nonclik);
                     }
+
 
 
                 }

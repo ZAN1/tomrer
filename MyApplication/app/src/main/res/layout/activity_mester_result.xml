@@ -28,13 +28,7 @@
                 android:text="Væg 1"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                  />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/punktmid"
-                android:layout_weight="0" />
+
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"

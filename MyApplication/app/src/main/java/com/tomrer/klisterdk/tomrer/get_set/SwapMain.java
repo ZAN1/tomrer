@@ -10,9 +10,9 @@ public class SwapMain {
        private static String  wall12;
     private static String  wall13;
     private static boolean blabla;
-    private static String redred;
-    private static String blared;
-    private static String redbla;
+    private static boolean redred;
+    private static boolean blared;
+    private static boolean redbla;
 
     public static boolean isBlabla() {
         return blabla;
@@ -22,27 +22,27 @@ public class SwapMain {
         SwapMain.blabla = blabla;
     }
 
-    public static String getRedred() {
+    public static boolean isRedred() {
         return redred;
     }
 
-    public static void setRedred(String redred) {
+    public static void setRedred(boolean redred) {
         SwapMain.redred = redred;
     }
 
-    public static String getBlared() {
+    public static boolean isBlared() {
         return blared;
     }
 
-    public static void setBlared(String blared) {
+    public static void setBlared(boolean blared) {
         SwapMain.blared = blared;
     }
 
-    public static String getRedbla() {
+    public static boolean isRedbla() {
         return redbla;
     }
 
-    public static void setRedbla(String redbla) {
+    public static void setRedbla(boolean redbla) {
         SwapMain.redbla = redbla;
     }
 
