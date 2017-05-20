@@ -141,7 +141,7 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
                 android:textSize="30dp"
                 android:background="#0099ff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/blabla1"
+                android:id="@+id/antalpladerblabla"
                 android:layout_weight="0.5" />
             <TextView
                 android:layout_width="match_parent"
@@ -151,7 +151,7 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
                 android:text="lille skinne"
                 android:background="#666699"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/label7"
+                android:id="@+id/lilleskinneblabla"
                 android:layout_weight="0.5" />
 
         <TextView
@@ -162,7 +162,7 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
             android:textSize="30dp"
             android:background="#339966"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/label8"
+            android:id="@+id/mellemskinneblabla"
             android:layout_weight="0.5" />
         <TextView
             android:layout_width="match_parent"
@@ -172,7 +172,7 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
             android:text="stor skinne"
             android:background="#800080"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/label10"
+            android:id="@+id/storskinneblabla"
             android:layout_weight="0.5" />
 
     </LinearLayout>

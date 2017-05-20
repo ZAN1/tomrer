@@ -141,9 +141,9 @@ public class MesterResult extends AppCompatActivity {
 
            kantplade2v2.setText(rr);
 
-       // List<Double> formUregnwall2 = addition.Uregnwall2(wall13);
+        List<Double> formUregnwall2 = addition.Uregnwall2(wall13);
 
-        //List<Double> formUregn2wall2 = addition.Uregn2wall2(wall13);
+        List<Double> formUregn2wall2 = addition.Uregn2wall2(wall13);
        // kantplade1v2.Text = Math.Round(formUregnwall2[4], 3).ToString();
         //    antalplader2v2.Text = Math.Round(formUregnwall2[5], 3).ToString();
         //  punktmidv2.Text = Math.Round(formUregnwall2[0], 3).ToString();
@@ -154,7 +154,7 @@ public class MesterResult extends AppCompatActivity {
         //alle loft plader i alt
 
 
-       // double blabla = Math.round(fromUregn2.get(6)) * Math.round(formUregn2wall2.get(6));
+        double blabla = Math.round(fromUregn2.get(6)) * Math.round(formUregn2wall2.get(6));
         //double blared = Math.round(fromUregn2.get(6)) * Math.round(formUregnwall2.get(5));
        // double redbla = Math.round(fromUregn.get(5)) * Math.round(formUregn2wall2.get(6));
        // double redred = Math.round(fromUregn.get(5)) * Math.round(formUregnwall2.get(5));

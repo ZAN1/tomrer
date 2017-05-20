@@ -179,17 +179,18 @@ public class addition extends MainActivity{
 
     //********************************************************
 
-    public static List<Double> midmid()
+    public static List<Double> midmid(String wall12)
     {
 
-
-        double a, b, c, d, e, f, g, h, i, j, k, l;
+       double p = Double.parseDouble(wall12);
+        double a, b, c, d, e, f, g, h, i, j, k, l,m;
         a = Uregn3.get(4);//væg 1 alle hele plader
         d = wall2Uregn3.get(6);//antal plader
         i = Uregn3.get(7);//længde af væg
         j = wall2Uregn3.get(7);//væg 2 antal hele plade
         k = wall2Uregn3.get(4);//væg 2 alle hele plader
         l = Uregn3.get(6);//antal plader
+        m = wall2Uregn1.get(7);//længde af væg 2
         // double error = 9999;
         List<Double> sUregn = new ArrayList<Double>();
         if (a < k)
@@ -207,7 +208,7 @@ public class addition extends MainActivity{
             sUregn.add(e);//1
             sUregn.add(h);//2
             sUregn.add(c);//3
-
+            sUregn.add(m);//4
             return sUregn;
         }
         else if (k < a)
@@ -223,7 +224,7 @@ public class addition extends MainActivity{
             sUregn.add(e);//1
             sUregn.add(h);//2
             sUregn.add(c);//3
-
+            sUregn.add(m);//4
             return sUregn;
         }
         else if (a == k)
@@ -241,6 +242,7 @@ public class addition extends MainActivity{
             sUregn.add(e);//1
             sUregn.add(h);//2
             sUregn.add(c);//3
+            sUregn.add(m);//4
 
             return sUregn;
         }
@@ -248,7 +250,7 @@ public class addition extends MainActivity{
         {
             return sUregn;
         }
-
+            //return sUregn;
     }
 
 
