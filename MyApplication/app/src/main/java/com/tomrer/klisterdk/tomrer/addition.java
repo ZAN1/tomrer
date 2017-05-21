@@ -51,6 +51,7 @@ public class addition extends MainActivity{
         Uregn1.add(a);//6
         Uregn1.add(h);//7
         Uregn1.add(i);//8
+        Uregn1.add(a);//9
         return Uregn1;
 
 
@@ -104,11 +105,11 @@ public class addition extends MainActivity{
     //væg nr 2
 
     //metode loft plade er midt på midtten af væg
-    public static List<Double> Uregnwall2(String wallv2)
+    public static List<Double> Uregnwall2(String wall13)
     {
         wall2Uregn1 = new ArrayList<Double>();
         double  b, c, d, e, f, h, g, i;
-       double a = Double.parseDouble(wallv2);
+       double a = Double.parseDouble(wall13);
 
 
 
@@ -143,11 +144,11 @@ public class addition extends MainActivity{
     // --
     // metode pladekant er ind til midt på væg nr 2
     //***************************************************************************
-    public static List<Double> Uregn2wall2(String wallv2)
+    public static List<Double> Uregn2wall2(String wall13)
     {
         wall2Uregn3 = new ArrayList<Double>();
         double  b, c, d, e, f, h, g, i, j;
-        double a = Double.parseDouble(wallv2);
+        double a = Double.parseDouble(wall13);
         b = a / 2; //finder midt af væg
         c = b - 0.30;  //træker en halv plade fra halv væg
         d = c / 0.60;// finder rå mål på hvormange plader
@@ -179,11 +180,22 @@ public class addition extends MainActivity{
 
     //********************************************************
 
-    public static List<Double> midmid(String wall12)
+    public static List<Double> midmid()
     {
 
-       double p = Double.parseDouble(wall12);
-        double a, b, c, d, e, f, g, h, i, j, k, l,m;
+           List<Double> sUregn = new ArrayList<>();
+        double a, b, c, d, e, f, g, h, i, j, k, l,m,n;
+
+//       List<Double> formuregn = Uregn(wall12);
+//        List<Double> formuregn2 = Uregn2(wall12);
+//        List<Double> formUregnwall2 = Uregnwall2(wall13);
+//        List<Double> formUregn2wall2  = Uregn2wall2(wall13);
+//
+//       double pladerialtblabla = formuregn2.get(6) * formUregn2wall2.get(6);
+//        double pladerialtblared = formuregn2.get(6) * formUregnwall2.get(5);
+//        double pladerialtredred = formuregn.get(5) * formUregnwall2.get(5);
+//        double pladerialtredbla = formuregn2.get(5) * formUregn2wall2.get(6);
+
         a = Uregn3.get(4);//væg 1 alle hele plader
         d = wall2Uregn3.get(6);//antal plader
         i = Uregn3.get(7);//længde af væg
@@ -191,11 +203,12 @@ public class addition extends MainActivity{
         k = wall2Uregn3.get(4);//væg 2 alle hele plader
         l = Uregn3.get(6);//antal plader
         m = wall2Uregn1.get(7);//længde af væg 2
+        n = Uregn1.get(9);//længde af væg 1
         // double error = 9999;
-        List<Double> sUregn = new ArrayList<Double>();
+       // List<Double> sUregn = new ArrayList<Double>();
         if (a < k)
         {
-            b = (a / 1.20 + 1) * 2; //antal spær
+            b = (a / 1.20 + 1) * 2 ; //antal spær
             c = (a / 1.20) * 2; //antal spær rum
             e = (d - 1) * c;//antal mellem spær
             f = (d - 1) * 3; // antal små spær i madt og kanter
@@ -204,21 +217,23 @@ public class addition extends MainActivity{
 
 
 
-            sUregn.add(b);//0
-            sUregn.add(e);//1
-            sUregn.add(h);//2
+
+            sUregn.add(b);//0 stor
+            sUregn.add(e);//1 mellem
+            sUregn.add(h);//2 små
             sUregn.add(c);//3
             sUregn.add(m);//4
             return sUregn;
         }
         else if (k < a)
         {
-            b = (k / 1.20 + 1) * 2; //antal spær
+            b = Math.floor((k / 1.20 + 1)) * 2; //antal spær
             c = (k / 1.20) * 2; //antal spær rum
             e = (l - 1) * c;//antal mellem spær
             f = (l - 1) * 3; // antal små spær i madt og kanter
             g = l * c;//antalet af små spær i spær rum
             h = g + f;// antal af små spær i alt
+
 
             sUregn.add(b);//0
             sUregn.add(e);//1
@@ -229,7 +244,7 @@ public class addition extends MainActivity{
         }
         else if (a == k)
         {
-            b = (a / 1.20 + 1) * 2; //antal spær
+            b = Math.floor((a / 1.20 +1 )) * 2; //antal spær
             c = (a / 1.20) * 2; //antal spær rum
             e = (d - 1) * c;//antal mellem spær
             f = (d - 1) * 3; // antal små spær i madt og kanter
@@ -270,7 +285,7 @@ public class addition extends MainActivity{
         if (d < e)//væg 1
         {
 
-            c = (a * 2) / 1.2;//antal spær
+            c = (a * 2) / 1.2 + 1;//antal spær
             f = c - 1;//antal spær rum
             i = (h - 1) * f;//antal af mellem spær i spær rum
             j = (h - 1) * 2;//antal mellem spær i kant rum
@@ -280,16 +295,16 @@ public class addition extends MainActivity{
             n = k + l;//små spær i alt
 
 
-            kUregn.add(c);//0
-            kUregn.add(m);//1
-            kUregn.add(n);//2
+            kUregn.add(c);//0 stor
+            kUregn.add(m);//1 mellem
+            kUregn.add(n);//2 små
             kUregn.add(f);//3
 
             return kUregn;
         }
         else if (e < d)//væg 2
         {
-            c = (b * 2) / 1.2;//antal spær
+            c = (b * 2) / 1.2 + 1;//antal spær
             f = c - 1;//antal spær rum
             i = (g - 1) * f;//antal af mellem spær i spær rum
             j = (g - 1) * 2;//antal mellem spær i kant rum
@@ -307,7 +322,7 @@ public class addition extends MainActivity{
         }
         else if (d == e)
         {
-            c = (a * 2) / 1.2;//antal spær
+            c = (a * 2) / 1.2 + 1;//antal spær
             f = c - 1;//antal spær rum
             i = (h - 1) * f;//antal af mellem spær i spær rum
             j = (h - 1) * 2;//antal mellem spær i kant rum

@@ -17,36 +17,75 @@ public class MesterMaterialer extends AppCompatActivity {
         setContentView(R.layout.activity_mester_materialer_redbla);
 
 
-       // List<Double> bb = addition.sUregn;
-       // addition.sUregn.get(0).toString();
+    
 
 
         String wall12 = SwapMain.getWall12();
-        List<Double> midmid = addition.midmid(wall12);
-      //  String wall13 = SwapMain.getWall13();
-      //  List<Double> fromUregn = addition.Uregn(wall12);
-     //   List<Double> fromUregn2 = addition.Uregn2(wall12);
-     //   List<Double> formUregn2wall2 = addition.Uregn2wall2(wall12);
-      //  List<Double> midmid = addition.midmid();
-       // List<Double> midtkant = addition.();
-      //  List<Double> kantkant = addition.kantkant();
+        List<Double> midmid = addition.midmid();
+        List<Double> kantkant = addition.kantkant();
+        List<Double> midkant = addition.midkant();
+        String wall13 = SwapMain.getWall13();
+        double v1 = Double.parseDouble(wall12);
+        double v2 = Double.parseDouble(wall13);
+
 
 
 
 //***********************************************************************************************
         if (SwapMain.isBlabla()){
 
+
+
+
             setContentView(R.layout.activity_mester_materialer_blabla);
             TextView storskinneblabla = (TextView) findViewById(R.id.storskinneblabla);
             TextView mellemskinneblabla = (TextView) findViewById(R.id.mellemskinneblabla);
             TextView lilleskinneblabla = (TextView) findViewById(R.id.lilleskinneblabla);
 
-          String   mellemskinneblabla1 = midmid.get(1).toString();
-           String  lilleskinneblabla1 = midmid.get(2).toString();
-           String storskinneblabla1 = midmid.get(0).toString();
-            storskinneblabla.setText(storskinneblabla1);
-            mellemskinneblabla.setText(mellemskinneblabla1);
-            lilleskinneblabla.setText(lilleskinneblabla1);
+
+                        if (v1 < v2)
+            {
+                String storskinneblabla1 = midmid.get(0).toString() + " X " + wall13 + " m";
+
+                 String   mellemskinneblabla1  = midmid.get(1).toString();
+                 String  lilleskinneblabla1 = midmid.get(2).toString();
+
+                storskinneblabla.setText(storskinneblabla1);
+                mellemskinneblabla.setText(mellemskinneblabla1);
+                lilleskinneblabla.setText(lilleskinneblabla1);
+
+
+            }
+            else if (v1 > v2)
+            {
+                String storskinneblabla1 = midmid.get(0).toString() + " X " + wall12 + " m";
+
+              String  mellemskinneblabla1 = midmid.get(1).toString();
+                 String  lilleskinneblabla1 = midmid.get(2).toString();
+
+                storskinneblabla.setText(storskinneblabla1);
+                mellemskinneblabla.setText(mellemskinneblabla1);
+                lilleskinneblabla.setText(lilleskinneblabla1);
+
+
+
+            }
+            else if (v1 == v2)
+            {
+                String storskinneblabla1 = midmid.get(0).toString() + " X " + wall13 + " m";
+
+                  String  mellemskinneblabla1 = midmid.get(1).toString();
+                 String  lilleskinneblabla1 = midmid.get(2).toString();
+                storskinneblabla.setText(storskinneblabla1);
+                mellemskinneblabla.setText(mellemskinneblabla1);
+                lilleskinneblabla.setText(lilleskinneblabla1);
+
+
+
+
+
+
+            }
         }
         if (SwapMain.isRedbla()){
 
@@ -55,13 +94,59 @@ public class MesterMaterialer extends AppCompatActivity {
             TextView storskinneredbla = (TextView) findViewById(R.id.storskinneredbla);
             TextView mellemskinneredbla = (TextView) findViewById(R.id.mellemskinneredbla);
             TextView lilleskinneredbla = (TextView) findViewById(R.id.lilleskinneredbla);
-            String   mellemskinneredbla1 = midmid.get(1).toString();
-            String  lilleskinneredbla1 = midmid.get(2).toString();
-            String storskinneredbla1 = midmid.get(0).toString();
-            storskinneredbla.setText(storskinneredbla1);
-            mellemskinneredbla.setText(mellemskinneredbla1);
-            lilleskinneredbla.setText(lilleskinneredbla1);
 
+            if (v1 < v2)
+            {
+
+
+//
+
+                String lilleskinneredbla1 = midkant.get(3).toString();
+             String   mellemskinneredbla1 = midkant.get(2).toString();
+                String storskinneredbla11 = kantkant.get(0).toString() + " X " + wall13 + " m";
+
+                lilleskinneredbla.setText(lilleskinneredbla1);
+                mellemskinneredbla.setText(mellemskinneredbla1);
+                storskinneredbla.setText(storskinneredbla11);
+
+            }
+            else if (v1 > v2)
+            {
+
+
+
+
+                //kant mid
+                String lilleskinneredbla1 = midkant.get(3).toString();
+                String   mellemskinneredbla1 = midkant.get(2).toString();
+                String storskinneredbla11 = kantkant.get(0).toString() + " X " + wall12 + " m";
+
+                lilleskinneredbla.setText(lilleskinneredbla1);
+                mellemskinneredbla.setText(mellemskinneredbla1);
+                storskinneredbla.setText(storskinneredbla11);
+
+
+            }
+            else if (v1 == v2)
+            {
+
+
+
+
+
+
+                //kant mid
+                String lilleskinneredbla1 = midkant.get(3).toString();
+                String   mellemskinneredbla1 = midkant.get(2).toString();
+                String storskinneredbla11 = kantkant.get(0).toString() + " X " + wall13 + " m";
+
+                lilleskinneredbla.setText(lilleskinneredbla1);
+                mellemskinneredbla.setText(mellemskinneredbla1);
+                storskinneredbla.setText(storskinneredbla11);
+
+
+
+            }
 
         }
         if (SwapMain.isRedred()){
@@ -71,14 +156,50 @@ public class MesterMaterialer extends AppCompatActivity {
             TextView storskinneredred = (TextView) findViewById(R.id.storskinneredred);
             TextView mellemskinneredred = (TextView) findViewById(R.id.mellemskinneredred);
             TextView lilleskinneredred = (TextView) findViewById(R.id.lilleskinneredred);
-            String   mellemskinneblabla1 = midmid.get(1).toString();
-            String  lilleskinneblabla1 = midmid.get(2).toString();
-            String storskinneblabla1 = midmid.get(0).toString();
 
-            storskinneredred.setText(storskinneblabla1);
-            mellemskinneredred.setText(mellemskinneblabla1);
-            lilleskinneredred.setText(lilleskinneblabla1);
+            if (v1 < v2)
+            {
+                String storskinneredred1 = kantkant.get(0).toString() + " X " + wall13 + " m";
 
+                String   mellemskinneredred1  = kantkant.get(1).toString();
+                String  lilleskinneredred1 = kantkant.get(2).toString();
+
+                storskinneredred.setText(storskinneredred1);
+                mellemskinneredred.setText(mellemskinneredred1);
+                lilleskinneredred.setText(lilleskinneredred1);
+
+
+            }
+            else if (v1 > v2)
+            {
+                String storskinneredred1 = kantkant.get(0).toString() + " X " + wall12 + " m";
+
+                String  mellemskinneredred1 = kantkant.get(1).toString();
+                String  lilleskinneredred1 = kantkant.get(2).toString();
+
+                storskinneredred.setText(storskinneredred1);
+                mellemskinneredred.setText(mellemskinneredred1);
+                lilleskinneredred.setText(lilleskinneredred1);
+
+
+
+            }
+            else if (v1 == v2)
+            {
+                String storskinneredred1 = kantkant.get(0).toString() + " X " + wall13 + " m";
+
+                String  mellemskinneredred1 = kantkant.get(1).toString();
+                String  lilleskinneredred1 = kantkant.get(2).toString();
+                storskinneredred.setText(storskinneredred1);
+                mellemskinneredred.setText(mellemskinneredred1);
+                lilleskinneredred.setText(lilleskinneredred1);
+
+
+
+
+
+
+            }
         }
         if (SwapMain.isBlared()){
 
@@ -87,14 +208,52 @@ public class MesterMaterialer extends AppCompatActivity {
             TextView storskinneblared = (TextView) findViewById(R.id.storskinneblared);
             TextView mellemskinneblared = (TextView) findViewById(R.id.mellemskinneblared);
             TextView lilleskinneblared = (TextView) findViewById(R.id.lilleskinneblared);
-            String   mellemskinneblabla1 = midmid.get(1).toString();
-            String  lilleskinneblabla1 = midmid.get(2).toString();
-            String storskinneblabla1 = midmid.get(0).toString();
+//
+            if (v1 < v2)
+            {
 
-            storskinneblared.setText(storskinneblabla1);
-            mellemskinneblared.setText(mellemskinneblabla1);
-            lilleskinneblared.setText(lilleskinneblabla1);
 
+
+
+                //****mid kant
+                String   mellemskinneblared1 = midkant.get(0).toString();
+                String  lilleskinneblared1 = midkant.get(1).toString();
+                String storskinneblared1 = midmid.get(0).toString() + " X " + wall13 + " m";
+
+
+                storskinneblared.setText(storskinneblared1);
+                mellemskinneblared.setText(mellemskinneblared1);
+                lilleskinneblared.setText(lilleskinneblared1);
+
+
+
+            }
+            else if (v1 > v2)
+            {
+                String   mellemskinneblared1 = midkant.get(0).toString();
+                String  lilleskinneblared1 = midkant.get(1).toString();
+                String storskinneblared1 = midmid.get(0).toString() + " X " + wall12 + " m";
+
+
+                storskinneblared.setText(storskinneblared1);
+                mellemskinneblared.setText(mellemskinneblared1);
+                lilleskinneblared.setText(lilleskinneblared1);
+
+            }
+            else if (v1 == v2)
+            {
+                String   mellemskinneblared1 = midkant.get(0).toString();
+                String  lilleskinneblared1 = midkant.get(1).toString();
+                String storskinneblared1 = midmid.get(0).toString() + " X " + wall13 + " m";
+
+
+                storskinneblared.setText(storskinneblared1);
+                mellemskinneblared.setText(mellemskinneblared1);
+                lilleskinneblared.setText(lilleskinneblared1);
+
+
+
+            }
 
         }
 
