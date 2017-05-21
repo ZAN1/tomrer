@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.tomrer.klisterdk.tomrer.get_set.SwapMain;
@@ -84,7 +85,16 @@ public class Loft6060b extends AppCompatActivity {
 
 
         });
+        ImageView goFront = (ImageView) findViewById(R.id.homeh);
 
+        goFront.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Loft6060b.this,MainActivity.class);
+
+                startActivity(intent);
+            }
+        });
 
     }
 

@@ -10,54 +10,44 @@
     android:weightSum="100"
     android:orientation="vertical">
 
-
-
-
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-
-
-
     <LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="72dp"
-    android:layout_weight="100"
-
-
-    >
-
-
-
-
-    <TextView
-        
-        android:gravity="center_vertical"
-        android:textAlignment="center"
-        android:id="@+id/home"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:layout_weight="100"
-        android:textColor="#ffffff"
-        android:background="#ffb31a"
-        android:text="Tømrer Tool"
-        android:textSize="18dp"
+        android:layout_weight="0"
         >
+        <ImageView
 
-    </TextView>
+            android:id="@+id/imageView"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/newicon"
+            android:layout_weight="0"/>
 
+        <TextView
+
+        
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_weight="1000"
+            android:textColor="#ffffff"
+            android:background="#ffb31a"
+            android:text="Tømrer Tool"
+            android:textSize="18dp"
+                                            />
+        <ImageView
+            android:id="@+id/homeh"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/home"
+            android:layout_weight="0"
+            android:background="#ffb31a"
+            />
 
     </LinearLayout>
-    <ImageView
-
-        android:id="@+id/imageView"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:src="@drawable/newicon" />
-</RelativeLayout>
 </LinearLayout>
 
 

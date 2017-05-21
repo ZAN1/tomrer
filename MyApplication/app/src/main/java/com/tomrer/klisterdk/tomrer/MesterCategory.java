@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MesterCategory extends AppCompatActivity {
@@ -22,5 +23,15 @@ public class MesterCategory extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+        ImageView goFront = (ImageView) findViewById(R.id.homeh);
+
+        goFront.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MesterCategory.this,MainActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }

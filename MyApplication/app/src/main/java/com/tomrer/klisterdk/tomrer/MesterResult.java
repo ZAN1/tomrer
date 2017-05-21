@@ -379,6 +379,15 @@ public class MesterResult extends AppCompatActivity {
             });
 
         }
+        ImageView goFront = (ImageView) findViewById(R.id.homeh);
 
+        goFront.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MesterResult.this,MainActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }
