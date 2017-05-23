@@ -1,5 +1,7 @@
 package com.tomrer.klisterdk.tomrer;
 
+import com.tomrer.klisterdk.tomrer.get_set.SwapMain;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,9 +20,13 @@ public class addition extends MainActivity{
     static List<Double> sUregn = new ArrayList<Double>();
     static List<Double> kUregn = new ArrayList<Double>();
     static List<Double> kkUregn = new ArrayList<Double>();
-    //String wall12 = SwapMain.getWall12();
-    //String wall13 = SwapMain.getWall13();
+    String wall12 = SwapMain.getWall12();
+    String wall13 = SwapMain.getWall13();
     //metode loft plade er midt på midtten af væg
+    List<Double> formuregn = Uregn(wall12);
+    List<Double> formuregn2 = Uregn2(wall12);
+    List<Double> formUregnwall2 = Uregnwall2(wall13);
+    List<Double> formUregn2wall2  = Uregn2wall2(wall13);
 
     public static List<Double> Uregn(String wall12)
     {
@@ -36,7 +42,7 @@ public class addition extends MainActivity{
         d = Math.floor(c);//runder ned til hel tal
         e = d * 0.60;//ganger halv tal med plade brede for at få længde på alle hele plader lagt sammen
         f = b - e;//halv væg - alle hele plader for at finde den sidste plade brede
-        g = (d * 2) + 2;// antal plader i alt
+        g = (d * 2) ;// antal plader i alt
         // redred spær antal
         h = (e / 1.20) * 2; // antal spær
         i = h - 1;//antal spærrum
@@ -119,7 +125,7 @@ public class addition extends MainActivity{
         d = Math.floor(c);//runder ned til hel tal
         e = d * 0.60;//ganger hal tal med plade brede for at få længde på alle hele plader lagt sammen
         f = b - e;//halv væg - alle hele plader for at finde den sidste plade brede
-        g = (d * 2) + 2;// antal plader i alt
+        g = (d * 2) ;// antal plader i alt
         h = (e * 2) / 1.20; // antal spær
         i = h + 1;//antalrum
 
@@ -186,15 +192,13 @@ public class addition extends MainActivity{
            List<Double> sUregn = new ArrayList<>();
         double a, b, c, d, e, f, g, h, i, j, k, l,m,n;
 
-//       List<Double> formuregn = Uregn(wall12);
-//        List<Double> formuregn2 = Uregn2(wall12);
-//        List<Double> formUregnwall2 = Uregnwall2(wall13);
-//        List<Double> formUregn2wall2  = Uregn2wall2(wall13);
+
 //
-//       double pladerialtblabla = formuregn2.get(6) * formUregn2wall2.get(6);
+//        double pladerialtblabla = formuregn2.get(6) * formUregn2wall2.get(6);
 //        double pladerialtblared = formuregn2.get(6) * formUregnwall2.get(5);
 //        double pladerialtredred = formuregn.get(5) * formUregnwall2.get(5);
 //        double pladerialtredbla = formuregn2.get(5) * formUregn2wall2.get(6);
+
 
         a = Uregn3.get(4);//væg 1 alle hele plader
         d = wall2Uregn3.get(6);//antal plader
@@ -377,6 +381,13 @@ public class addition extends MainActivity{
         return kkUregn;
     }
     //**********************
+//    public void antalPlader(){
+//
+//        double a = formuregn2.get(6) * formUregn2wall2.get(6);
+//
+//        String  b = Double.toString(a);
+//
+//    }
 
 
 }

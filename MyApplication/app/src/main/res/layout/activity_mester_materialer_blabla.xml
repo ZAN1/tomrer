@@ -81,20 +81,22 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_weight="1">
+
         <TextView
+            android:id="@+id/bla"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="0.5"
+            android:background="#0099ff"
             android:gravity="center"
             android:text="antal plader"
-            android:layout_margin="0dp"
-            android:textSize="30dp"
-            android:background="#0099ff"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/bla"
-            android:layout_weight="0.5" />
+            android:textSize="30dp" />
+
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:textSize="30dp"
             android:gravity="center"
             android:text="lille skinne"
@@ -104,7 +106,7 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
             android:layout_weight="0.5" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:text="mellem skinne"
             android:textSize="30dp"
@@ -114,7 +116,7 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
             android:layout_weight="0.5" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:textSize="30dp"
             android:text="stor skinne"
@@ -122,18 +124,28 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/redv2"
             android:layout_weight="0.5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="kantskinne"
+            android:background="#b37700"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            android:layout_weight="0.5" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1">
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
 
                 android:text="antal plader"
@@ -141,11 +153,11 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
                 android:textSize="30dp"
                 android:background="#0099ff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/antalpladerblabla"
+                android:id="@+id/pladerialtblabla"
                 android:layout_weight="0.5" />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:textSize="30dp"
                 android:gravity="center"
                 android:text="lille skinne"
@@ -156,7 +168,7 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:text="mellem skinne"
             android:textSize="30dp"
@@ -166,7 +178,7 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
             android:layout_weight="0.5" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:textSize="30dp"
             android:text="stor skinne"
@@ -174,6 +186,17 @@ tools:context="com.tomrer.klisterdk.tomrer.MesterMaterialer">
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/storskinneblabla"
             android:layout_weight="0.5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="kantskinne"
+                android:background="#b37700"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/kantskinne"
+                android:layout_weight="0.5" />
+
 
     </LinearLayout>
     </LinearLayout>

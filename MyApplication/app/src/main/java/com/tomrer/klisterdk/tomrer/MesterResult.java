@@ -92,6 +92,8 @@ public class MesterResult extends AppCompatActivity {
 
         List<Double> fromUregn = addition.Uregn(wall12);
         List<Double> fromUregn2 = addition.Uregn2(wall12);
+            List<Double> fromUregn1 = addition.Uregn(wall13);
+            List<Double> fromUregn21 = addition.Uregn2(wall13);
         //  punktmid.Text = Math.Round(fromUregn[0], 3).ToString();
         DecimalFormat format = new DecimalFormat("#0.000");
         double dd1 = fromUregn.get(4);
@@ -124,26 +126,26 @@ public class MesterResult extends AppCompatActivity {
        // double v1 = Double.parseDouble(wall13);
        // double v2 = Double.parseDouble(wall12);
 
-        //List<Double> formUregn2wall2 = addition.Uregn2(wall12);
+            List<Double> formUregnwall2 = addition.Uregnwall2(wall13);
+
+            List<Double> formUregn2wall2 = addition.Uregn2wall2(wall13);
         //double ddv2 = Math.round(Double.valueOf(format.format(formUregn2wall2.get(5))));
             DecimalFormat format2 = new DecimalFormat("#0.000");
-        double ddv2 = fromUregn.get(4);
+        double ddv2 = fromUregn1.get(4);
            String rr1 = format2.format(ddv2);
 
            // String kantplade1v2Text = String.valueOf(rr1);
 
         kantplade1v2.setText(rr1);
             DecimalFormat format3 = new DecimalFormat("#0.000");
-            double  ssv2 = fromUregn2.get(5);
+            double  ssv2 = fromUregn21.get(5);
          String rr = format3.format(ssv2);
            //double ssv2 =Math.round(Double.valueOf(format.format(fromUregn2.get(5))));
           // String kantPlade2v2Text = String.valueOf(ssv2);
 
            kantplade2v2.setText(rr);
 
-        List<Double> formUregnwall2 = addition.Uregnwall2(wall13);
 
-        List<Double> formUregn2wall2 = addition.Uregn2wall2(wall13);
        // kantplade1v2.Text = Math.Round(formUregnwall2[4], 3).ToString();
         //    antalplader2v2.Text = Math.Round(formUregnwall2[5], 3).ToString();
         //  punktmidv2.Text = Math.Round(formUregnwall2[0], 3).ToString();
@@ -154,7 +156,7 @@ public class MesterResult extends AppCompatActivity {
         //alle loft plader i alt
 
 
-        double blabla = Math.round(fromUregn2.get(6)) * Math.round(formUregn2wall2.get(6));
+       // double blabla = Math.round(fromUregn2.get(6)) * Math.round(formUregn2wall2.get(6));
         //double blared = Math.round(fromUregn2.get(6)) * Math.round(formUregnwall2.get(5));
        // double redbla = Math.round(fromUregn.get(5)) * Math.round(formUregn2wall2.get(6));
        // double redred = Math.round(fromUregn.get(5)) * Math.round(formUregnwall2.get(5));
