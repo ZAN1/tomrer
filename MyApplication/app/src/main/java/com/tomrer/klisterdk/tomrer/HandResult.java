@@ -1,11 +1,8 @@
 package com.tomrer.klisterdk.tomrer;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tomrer.klisterdk.tomrer.get_set.SwapMain;
@@ -15,6 +12,10 @@ import java.util.List;
 
 public class HandResult extends AppCompatActivity {
 
+    private boolean t1Selected = false;
+    private boolean t2Selected = false;
+    private boolean tt1Selected = false;
+    private boolean tt2Selected = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +68,8 @@ public class HandResult extends AppCompatActivity {
 
             List<Double> fromUregn = addition.Uregn(wall12);
             List<Double> fromUregn2 = addition.Uregn2(wall12);
+            List<Double> fromUregn1 = addition.Uregn(wall13);
+            List<Double> fromUregn21 = addition.Uregn2(wall13);
             //  punktmid.Text = Math.Round(fromUregn[0], 3).ToString();
             DecimalFormat format = new DecimalFormat("#0.000");
             double dd1 = fromUregn.get(4);
@@ -99,26 +102,26 @@ public class HandResult extends AppCompatActivity {
             // double v1 = Double.parseDouble(wall13);
             // double v2 = Double.parseDouble(wall12);
 
-            //List<Double> formUregn2wall2 = addition.Uregn2(wall12);
+            List<Double> formUregnwall2 = addition.Uregnwall2(wall13);
+
+            List<Double> formUregn2wall2 = addition.Uregn2wall2(wall13);
             //double ddv2 = Math.round(Double.valueOf(format.format(formUregn2wall2.get(5))));
             DecimalFormat format2 = new DecimalFormat("#0.000");
-            double ddv2 = fromUregn.get(4);
+            double ddv2 = fromUregn1.get(4);
             String rr1 = format2.format(ddv2);
 
             // String kantplade1v2Text = String.valueOf(rr1);
 
             kantplade1v2.setText(rr1);
             DecimalFormat format3 = new DecimalFormat("#0.000");
-            double  ssv2 = fromUregn2.get(5);
+            double  ssv2 = fromUregn21.get(5);
             String rr = format3.format(ssv2);
             //double ssv2 =Math.round(Double.valueOf(format.format(fromUregn2.get(5))));
             // String kantPlade2v2Text = String.valueOf(ssv2);
 
             kantplade2v2.setText(rr);
 
-            // List<Double> formUregnwall2 = addition.Uregnwall2(wall13);
 
-            //List<Double> formUregn2wall2 = addition.Uregn2wall2(wall13);
             // kantplade1v2.Text = Math.Round(formUregnwall2[4], 3).ToString();
             //    antalplader2v2.Text = Math.Round(formUregnwall2[5], 3).ToString();
             //  punktmidv2.Text = Math.Round(formUregnwall2[0], 3).ToString();
@@ -223,17 +226,147 @@ public class HandResult extends AppCompatActivity {
 
 
             }*/
+//            final Button hentMaterialer = (Button) findViewById(R.id.mestermaterialer);
+//            final ImageView image = (ImageView) findViewById(R.id.t1);
+//            final ImageView image1 = (ImageView) findViewById(R.id.t2);
+//            final ImageView image2 = (ImageView) findViewById(R.id.tt1);
+//            final ImageView image3 = (ImageView) findViewById(R.id.tt2);
+//            image.setOnClickListener(new View.OnClickListener() {
+//                //private Rect rect;
+//
+//                @Override
+//                public void onClick(View v) {
+//
+//                if (t1Selected) {
+//                        // Unselect
+//                    image.setColorFilter(Color.argb(0,0,0,0));
+//                        t1Selected = false;
+//                    } else {
+//                        // Select
+//                    image.setColorFilter(Color.argb(88,255,255,128));
+//                        t1Selected = true;
+//
+//                    }
 
-        }
-        ImageView goFront = (ImageView) findViewById(R.id.homeh);
+//                    t1Selected = HighlightMesterResult.highlight(image, t1Selected);
+//                    t2Selected = HighlightMesterResult.unHighlight(image1, t2Selected);
 
-        goFront.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HandResult.this,MainActivity.class);
+//                    if(event.getAction() == MotionEvent.ACTION_DOWN){
+//                        image.setColorFilter(Color.argb(88,255,255,128));
+//                        rect = new Rect(v.getLeft(),v.getTop(),v.getRight(),v.getBottom());
+//
+//
+//                    }
+//                    if(event.getAction() == MotionEvent.ACTION_UP){
+//
+//                        image.setColorFilter(Color.argb(0,0,0,0));
+//
+//                    }
+//                    if(event.getAction() == MotionEvent.ACTION_MOVE){
+//
+//                        if (!rect.contains(v.getLeft() + (int) event.getX(), v.getTop() + (int) event.getY())){
+//
+//                            image.setColorFilter(Color.argb(0,0,0,0));
+//
+//                        }
 
-                startActivity(intent);
-            }
-        });
+//                }
+//
+//
+//
+//            });
+//            image1.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    t2Selected = HighlightMesterResult.highlight(image1, t2Selected);
+//                    t1Selected = HighlightMesterResult.unHighlight(image, t1Selected);
+//                }
+//            });
+//            image2.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    tt1Selected = HighlightMesterResult.highlight(image2, tt1Selected );
+//                    tt2Selected = HighlightMesterResult.unHighlight(image3, tt2Selected);
+//
+//                }
+//            });
+//            image3.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    tt2Selected = HighlightMesterResult.highlight(image3, tt2Selected);
+//
+//                    tt1Selected = HighlightMesterResult.unHighlight(image2, tt1Selected);
+//
+//                }
+//            });
+//           final boolean redred = false;
+//            final   boolean redbla = false;
+//            final   boolean blared = false;
+//               boolean blabla = false;
+//            hentMaterialer.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent materialer = new Intent(MesterResult.this,MesterMaterialer.class);
+//                    Intent nonclik = new Intent(MesterResult.this,MesterResult.class);
+//                    if (t2Selected && tt2Selected){
+//                        SwapMain swap = new SwapMain();
+//
+//                        boolean blabla = true;
+//                        swap.setBlabla(blabla);
+//                        swap.setBlared(false);
+//                        swap.setRedbla(false);
+//                        swap.setRedred(false);
+//                        startActivity(materialer);
+//
+//                    }else if (t1Selected && tt1Selected){
+//                        SwapMain swap = new SwapMain();
+//                        boolean redred = true;
+//                        swap.setBlabla(false);
+//                        swap.setBlared(false);
+//                        swap.setRedbla(false);
+//
+//                        swap.setRedred(redred);
+//                        startActivity(materialer);
+//                    }else if (t2Selected && tt1Selected ){
+//                        SwapMain swap = new SwapMain();
+//                        boolean blared = true;
+//                        swap.setBlabla(false);
+//                        swap.setBlared(blared);
+//
+//                        swap.setRedbla(false);
+//                        swap.setRedred(false);
+//                        startActivity(materialer);
+//                    }else if (t1Selected && tt2Selected){
+//                        SwapMain swap = new SwapMain();
+//                        boolean redbla = true;
+//                        swap.setBlabla(false);
+//                        swap.setBlared(false);
+//
+//                        swap.setRedred(false);
+//                        swap.setRedbla(redbla);
+//                        startActivity(materialer);
+//                    }else{
+//
+//                        Toast.makeText(MesterResult.this ,"Maker et billede ved væg nr 1 & væg nr 2.",Toast.LENGTH_LONG).show();
+//                        startActivity(nonclik);
+//                    }
+//
+//
+//
+//                }
+//            });
+//
+//        }
+//        ImageView goFront = (ImageView) findViewById(R.id.homeh);
+//
+//        goFront.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MesterResult.this,MainActivity.class);
+//
+//                startActivity(intent);
+//            }
+//        });
     }
+}
 }
