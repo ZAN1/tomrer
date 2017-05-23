@@ -1,8 +1,11 @@
 package com.tomrer.klisterdk.tomrer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tomrer.klisterdk.tomrer.get_set.SwapMain;
@@ -368,5 +371,15 @@ public class HandResult extends AppCompatActivity {
 //            }
 //        });
     }
+        ImageView goFront = (ImageView) findViewById(R.id.homeh);
+
+        goFront.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HandResult.this,MainActivity.class);
+
+                startActivity(intent);
+            }
+        });
 }
 }
