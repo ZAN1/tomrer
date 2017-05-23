@@ -42,7 +42,7 @@ public class addition extends MainActivity{
         d = Math.floor(c);//runder ned til hel tal
         e = d * 0.60;//ganger halv tal med plade brede for at få længde på alle hele plader lagt sammen
         f = b - e;//halv væg - alle hele plader for at finde den sidste plade brede
-        g = (d * 2) ;// antal plader i alt
+        g = (d * 2)+2 ;// antal plader i alt
         // redred spær antal
         h = (e / 1.20) * 2; // antal spær
         i = h - 1;//antal spærrum
@@ -111,11 +111,11 @@ public class addition extends MainActivity{
     //væg nr 2
 
     //metode loft plade er midt på midtten af væg
-    public static List<Double> Uregnwall2(String wall13)
+    public static List<Double> Uregnwall2(String wall12)
     {
         wall2Uregn1 = new ArrayList<Double>();
         double  b, c, d, e, f, h, g, i;
-       double a = Double.parseDouble(wall13);
+       double a = Double.parseDouble(wall12);
 
 
 
@@ -125,7 +125,7 @@ public class addition extends MainActivity{
         d = Math.floor(c);//runder ned til hel tal
         e = d * 0.60;//ganger hal tal med plade brede for at få længde på alle hele plader lagt sammen
         f = b - e;//halv væg - alle hele plader for at finde den sidste plade brede
-        g = (d * 2) ;// antal plader i alt
+        g = (d * 2) + 2 ;// antal plader i alt
         h = (e * 2) / 1.20; // antal spær
         i = h + 1;//antalrum
 
@@ -150,11 +150,11 @@ public class addition extends MainActivity{
     // --
     // metode pladekant er ind til midt på væg nr 2
     //***************************************************************************
-    public static List<Double> Uregn2wall2(String wall13)
+    public static List<Double> Uregn2wall2(String wall12)
     {
         wall2Uregn3 = new ArrayList<Double>();
         double  b, c, d, e, f, h, g, i, j;
-        double a = Double.parseDouble(wall13);
+        double a = Double.parseDouble(wall12);
         b = a / 2; //finder midt af væg
         c = b - 0.30;  //træker en halv plade fra halv væg
         d = c / 0.60;// finder rå mål på hvormange plader
@@ -289,7 +289,7 @@ public class addition extends MainActivity{
         if (d < e)//væg 1
         {
 
-            c = (a * 2) / 1.2 + 1;//antal spær
+            c = (a * 2) / 1.2 ;//antal spær
             f = c - 1;//antal spær rum
             i = (h - 1) * f;//antal af mellem spær i spær rum
             j = (h - 1) * 2;//antal mellem spær i kant rum
@@ -308,7 +308,7 @@ public class addition extends MainActivity{
         }
         else if (e < d)//væg 2
         {
-            c = (b * 2) / 1.2 + 1;//antal spær
+            c = (b * 2) / 1.2 ;//antal spær
             f = c - 1;//antal spær rum
             i = (g - 1) * f;//antal af mellem spær i spær rum
             j = (g - 1) * 2;//antal mellem spær i kant rum
@@ -326,7 +326,7 @@ public class addition extends MainActivity{
         }
         else if (d == e)
         {
-            c = (a * 2) / 1.2 + 1;//antal spær
+            c = (a * 2) / 1.2 ;//antal spær
             f = c - 1;//antal spær rum
             i = (h - 1) * f;//antal af mellem spær i spær rum
             j = (h - 1) * 2;//antal mellem spær i kant rum

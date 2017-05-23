@@ -39,7 +39,8 @@
         <activity android:name=".MesterCategory" />
         <activity android:name=".Loft6060b1" />
         <activity android:name=".HandResult" />
-        <activity android:name=".MesterMaterialer"></activity>
+        <activity android:name=".MesterMaterialer" />
+        <activity android:name=".trekandt345.Trekandt345"></activity>
     </application>
 
 </manifest>
