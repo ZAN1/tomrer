@@ -76,7 +76,11 @@ public class MesterMaterialer extends AppCompatActivity {
                 mellemskinneblabla.setText(mellemskinneblabla1);
                 lilleskinneblabla.setText(lilleskinneblabla1);
 
-
+//                sUregn.add(b);//0 stor blå blå v1 < v2
+//                sUregn.add(e);//1 mellem blå blå
+//                sUregn.add(h);//2 små blå blå
+//                sUregn.add(c);//3
+//                sUregn.add(m);//4
             }
             else if (v1 > v2)
             {
@@ -89,7 +93,11 @@ public class MesterMaterialer extends AppCompatActivity {
                 mellemskinneblabla.setText(mellemskinneblabla1);
                 lilleskinneblabla.setText(lilleskinneblabla1);
 
-
+//                sUregn.add(b);//0 stor blå blå
+//                sUregn.add(e);//1 mellem blå blå
+//                sUregn.add(h);//2 lille blå blå v2 < v1
+//                sUregn.add(c);//3
+//                sUregn.add(m);//4
 
             }
             else if (v1 == v2)
@@ -119,20 +127,23 @@ public class MesterMaterialer extends AppCompatActivity {
             TextView pladerialtredbla = (TextView) findViewById(R.id.pladerialtredbla);
             TextView kantskinne = (TextView) findViewById(R.id.kantskinne);
             kantskinne.setText(kantskinne2 + "m");
-            double  pladerialtredbla1 =  formuregn2.get(6) * formUregnwall2.get(5);
-          //   *
-            String pladerialtredbla2 = Double.toString(pladerialtredbla1);
-            pladerialtredbla.setText(pladerialtredbla2 + " stk");
+
+
 
             if (v1 < v2)
             {
 
+//                kkUregn.add(n);//3 mellem spær rød blå
+//                kkUregn.add(m);//4 små spær rød blå
+//                kkUregn.add(q);//5 antal spær væg 1 rød
+                double  pladerialtredbla1 =  formuregn.get(5) * formUregn2wall2.get(6);
+                //   *
+                String pladerialtredbla2 = Double.toString(pladerialtredbla1);
+                pladerialtredbla.setText(pladerialtredbla2 + " stk");
 
-//
-
-                String lilleskinneredbla1 = midkant.get(3).toString();
-             String   mellemskinneredbla1 = midkant.get(2).toString();
-                String storskinneredbla11 = kantkant.get(0).toString() + " X " + wall13 + " m";
+                String lilleskinneredbla1 = midkant.get(4).toString();
+             String   mellemskinneredbla1 = midkant.get(3).toString();
+                String storskinneredbla11 = midkant.get(5).toString() + " X " + wall13 + " m";
 
                 lilleskinneredbla.setText(lilleskinneredbla1);
                 mellemskinneredbla.setText(mellemskinneredbla1);
@@ -143,16 +154,39 @@ public class MesterMaterialer extends AppCompatActivity {
             {
 
 
-
+                double  pladerialtredbla1 =  formuregn2.get(6) * formUregnwall2.get(5);
+                //   *
+                String pladerialtredbla2 = Double.toString(pladerialtredbla1);
+                pladerialtredbla.setText(pladerialtredbla2 + " stk");
 
                 //kant mid
-                String lilleskinneredbla1 = midkant.get(3).toString();
-                String   mellemskinneredbla1 = midkant.get(2).toString();
-                String storskinneredbla11 = kantkant.get(0).toString() + " X " + wall12 + " m";
+                String lilleskinneredbla1 = midkant.get(11).toString();
+                String   mellemskinneredbla1 = midkant.get(10).toString();
+                String storskinneredbla11 = midkant.get(9).toString() + " X " + wall12 + " m";
 
                 lilleskinneredbla.setText(lilleskinneredbla1);
                 mellemskinneredbla.setText(mellemskinneredbla1);
                 storskinneredbla.setText(storskinneredbla11);
+                /////////////////////////////////
+//                String   mellemskinneblared1 = midkant.get(0).toString();
+//                String  lilleskinneblared1 = midkant.get(1).toString();
+//                String storskinneblared1 = midkant.get(2).toString() + " X " + wall13 + " m";
+//kkUregn.add(e);//0 mellemspær blå rød
+//                kkUregn.add(f);//1 små spær blå rød
+//                kkUregn.add(b);//2 antal store spær væg 1 blå
+//                kkUregn.add(n);//3 mellem spær rød blå
+//                kkUregn.add(m);//4 små spær rød blå
+//                kkUregn.add(q);//5 antal store spær væg 1 rød
+//                kkUregn.add(a);//6 antal store spær væg 2 blå
+//                kkUregn.add(k);//7 mellem spær blå rød modsat
+//                kkUregn.add(i);//8 små spær blå rød modsat
+//                kkUregn.add(w);//9antal store spær rød blå
+//                kkUregn.add(c);//10 mellem spær rød blå modsat
+//                kkUregn.add(g);// 11 små spær rød blå modsat
+//
+//                storskinneblared.setText(storskinneblared1);
+//                mellemskinneblared.setText(mellemskinneblared1);
+//                lilleskinneblared.setText(lilleskinneblared1);
 
 
             }
@@ -165,9 +199,9 @@ public class MesterMaterialer extends AppCompatActivity {
 
 
                 //kant mid
-                String lilleskinneredbla1 = midkant.get(3).toString();
-                String   mellemskinneredbla1 = midkant.get(2).toString();
-                String storskinneredbla11 = kantkant.get(0).toString() + " X " + wall13 + " m";
+                String lilleskinneredbla1 = midkant.get(4).toString();
+                String   mellemskinneredbla1 = midkant.get(3).toString();
+                String storskinneredbla11 = midkant.get(5).toString() + " X " + wall13 + " m";
 
                 lilleskinneredbla.setText(lilleskinneredbla1);
                 mellemskinneredbla.setText(mellemskinneredbla1);
@@ -246,20 +280,25 @@ public class MesterMaterialer extends AppCompatActivity {
             TextView pladerialtblared = (TextView) findViewById(R.id.pladerialtblared);
             TextView kantskinne = (TextView) findViewById(R.id.kantskinne);
             kantskinne.setText(kantskinne2 + "m");
-            double  pladerialtblared1 =  formuregn2.get(6) * formUregnwall2.get(5);
-            String pladerialtblared2 = Double.toString(pladerialtblared1);
-            pladerialtblared.setText(pladerialtblared2 + " stk");
+
 //
             if (v1 < v2)
             {
 
-
-
+//                kkUregn.add(e);//0 mellemspær blå rød
+//                kkUregn.add(f);//1 små spær blå rød
+//                kkUregn.add(b);//2 antal store spær væg 1 blå
+//                kkUregn.add(n);//3 mellem spær rød blå
+//                kkUregn.add(m);//4 små spær rød blå
+//                kkUregn.add(q);//5 antal store spær væg 1 rød
+                double  pladerialtblared1 =  formuregn2.get(6) * formUregnwall2.get(5);
+                String pladerialtblared2 = Double.toString(pladerialtblared1);
+                pladerialtblared.setText(pladerialtblared2 + " stk");
 
                 //****mid kant
                 String   mellemskinneblared1 = midkant.get(0).toString();
                 String  lilleskinneblared1 = midkant.get(1).toString();
-                String storskinneblared1 = midmid.get(0).toString() + " X " + wall13 + " m";
+                String storskinneblared1 = midkant.get(2).toString() + " X " + wall13 + " m";
 
 
                 storskinneblared.setText(storskinneblared1);
@@ -271,21 +310,38 @@ public class MesterMaterialer extends AppCompatActivity {
             }
             else if (v1 > v2)
             {
-                String   mellemskinneblared1 = midkant.get(0).toString();
-                String  lilleskinneblared1 = midkant.get(1).toString();
-                String storskinneblared1 = midmid.get(0).toString() + " X " + wall12 + " m";
+                double  pladerialtblared1 =  formuregn.get(5) * formUregn2wall2.get(6);
+                String pladerialtblared2 = Double.toString(pladerialtblared1);
+                pladerialtblared.setText(pladerialtblared2 + " stk");
+
+                String   mellemskinneblared1 = midkant.get(7).toString();
+                String  lilleskinneblared1 = midkant.get(8).toString();
+                String storskinneblared1 = midkant.get(6).toString() + " X " + wall12 + " m";
 
 
                 storskinneblared.setText(storskinneblared1);
                 mellemskinneblared.setText(mellemskinneblared1);
                 lilleskinneblared.setText(lilleskinneblared1);
 
+////              kkUregn.add(e);//0 mellemspær blå rød
+//                kkUregn.add(f);//1 små spær blå rød
+//                kkUregn.add(b);//2 antal store spær væg 1 blå
+//                kkUregn.add(n);//3 mellem spær rød blå
+//                kkUregn.add(m);//4 små spær rød blå
+//                kkUregn.add(q);//5 antal store spær væg 1 rød
+//                kkUregn.add(a);//6 antal store spær væg 2 blå
+//                kkUregn.add(k);//7 mellem spær blå rød modsat
+//                kkUregn.add(i);//8 små spær blå rød modsat
+//                kkUregn.add(w);//9antal store spær rød blå
+//                kkUregn.add(c);//mellem spær rød blå modsat
+//                kkUregn.add(g);//små spær rød blå modsat
+
             }
             else if (v1 == v2)
             {
                 String   mellemskinneblared1 = midkant.get(0).toString();
                 String  lilleskinneblared1 = midkant.get(1).toString();
-                String storskinneblared1 = midmid.get(0).toString() + " X " + wall13 + " m";
+                String storskinneblared1 = midkant.get(2).toString() + " X " + wall13 + " m";
 
 
                 storskinneblared.setText(storskinneblared1);
