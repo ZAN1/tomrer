@@ -34,7 +34,7 @@
             android:layout_height="72dp"
             android:layout_weight="1000"
             android:textColor="#ffffff"
-            android:background="#ffb31a"
+            android:background="@drawable/maalebaand"
             android:text="Tømrer Tool"
             android:textSize="18dp"
                                             />
