@@ -40,7 +40,8 @@
         <activity android:name=".Loft6060b1" />
         <activity android:name=".HandResult" />
         <activity android:name=".MesterMaterialer" />
-        <activity android:name=".trekandt345.Trekandt345"></activity>
+        <activity android:name=".trekandt345.Trekandt345" />
+        <activity android:name=".trekandt345.Trekandt345result"></activity>
     </application>
 
 </manifest>

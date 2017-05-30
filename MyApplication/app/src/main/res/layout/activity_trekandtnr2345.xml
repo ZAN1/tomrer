@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     tools:context="com.tomrer.klisterdk.tomrer.trekandt345.Trekandt345"
     android:orientation="vertical"
     android:weightSum="100">
@@ -21,23 +20,19 @@
 
 
     <RelativeLayout
-        android:id="@+id/relati"
         android:layout_width="fill_parent"
-        android:layout_height="250dp"
-        android:layout_centerHorizontal="true">
+        android:layout_height="250dp">
 
         <ImageView
             android:id="@+id/tre45"
-            android:layout_width="280dp"
-            android:layout_height="210dp"
-            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:src="@drawable/trekant" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="180dp"
             android:text="b"
@@ -50,69 +45,54 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
 
+            android:layout_marginTop="70dp"
             android:text="a"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#ffffff"
-            android:layout_alignBottom="@+id/lillec"
-            android:layout_alignStart="@+id/tre45"
-            android:layout_marginStart="26dp"
-            android:layout_marginBottom="30dp"
-            />
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="220dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="60dp"
             android:text="c"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#ffffff"
-            android:layout_marginStart="21dp"
-            android:layout_marginBottom="11dp"
-            android:layout_alignBottom="@+id/textView3"
-            android:layout_toEndOf="@+id/textView2" />
+            android:textColor="#ffffff" />
 
-        <EditText
-            android:id="@+id/lilleb"
+        <TextView
+            android:id="@+id/tlilleb"
             android:layout_width="95dp"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginLeft="150dp"
-
             android:layout_marginTop="210dp"
-            android:inputType="numberDecimal"
-            android:textAlignment="viewEnd" />
 
-        <EditText
-            android:id="@+id/lillec"
+            android:text="0"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/tlillec"
             android:layout_width="95dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="179dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="80dp"
+            android:text="0"
 
+            android:inputType="numberDecimal" />
 
-            android:inputType="numberDecimal"
-            android:textAlignment="viewEnd"
-            android:layout_alignBottom="@+id/lillea"
-            android:layout_toEndOf="@+id/lilleb"
-            android:layout_marginStart="29dp"
-            android:layout_marginBottom="16dp" />
-
-        <EditText
-            android:id="@+id/lillea"
+        <TextView
+            android:id="@+id/tlillea"
             android:layout_width="95dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
 
-
-            android:inputType="numberDecimal"
+            android:text="0"
             android:textAlignment="viewEnd"
-            android:layout_centerVertical="true"
-            android:layout_alignEnd="@+id/textView2"
-            android:layout_marginEnd="95dp" />
+            android:inputType="numberDecimal" />
 
 
     </RelativeLayout>
-
     <Button
         android:id="@+id/findmal"
         android:layout_width="200dp"

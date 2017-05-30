@@ -34,7 +34,14 @@
                 android:text="Lofter" />
 
 
-
+            <TextView
+                android:id="@+id/trekandt"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="42dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 4 5" />
 
 
         </LinearLayout>

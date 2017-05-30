@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.tomrer.klisterdk.tomrer.trekandt345.Trekandt345;
+
 public class TaskActivity extends AppCompatActivity {
 
     @Override
@@ -15,6 +17,7 @@ public class TaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_task);
 
         TextView lofter = (TextView) findViewById(R.id.hloft);
+        TextView trekandt = (TextView) findViewById(R.id.trekandt);
 
         lofter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +33,14 @@ public class TaskActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(TaskActivity.this,MainActivity.class);
 
+                startActivity(intent);
+            }
+        });
+
+        trekandt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(TaskActivity.this, Trekandt345.class);
                 startActivity(intent);
             }
         });
