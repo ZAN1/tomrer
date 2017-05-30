@@ -2,6 +2,7 @@ package com.tomrer.klisterdk.tomrer;
 
 
 import android.content.Intent;
+import android.opengl.GLES10;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 
 import com.crashlytics.android.Crashlytics;
 import com.flurry.android.FlurryAgent;
+
+import javax.microedition.khronos.opengles.GL10;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -23,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         Fabric.with(this, new Crashlytics());
-
+        int[] maxTextureSize = new int[1];
+        GLES10.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
 
 
         TextView handvarker = (TextView) findViewById(R.id.handvarker);

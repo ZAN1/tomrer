@@ -14,8 +14,9 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:layout_weight="0"
+        android:layout_weight="100"
         >
+
         <ImageView
 
             android:id="@+id/imageView"
@@ -26,25 +27,26 @@
 
         <TextView
 
-        
-            android:gravity="center_vertical"
-            android:textAlignment="center"
+
             android:id="@+id/home"
+            android:background="@drawable/maale"
             android:layout_width="match_parent"
             android:layout_height="72dp"
-            android:layout_weight="1000"
-            android:textColor="#ffffff"
-            android:background="@drawable/maalebaand"
+            android:layout_weight="100"
+
+            android:gravity="center_vertical"
             android:text="Tømrer Tool"
-            android:textSize="18dp"
-                                            />
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
         <ImageView
             android:id="@+id/homeh"
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:src="@drawable/home"
             android:layout_weight="0"
-            android:background="#ffb31a"
+            android:background="#E2B100"
             />
 
     </LinearLayout>
