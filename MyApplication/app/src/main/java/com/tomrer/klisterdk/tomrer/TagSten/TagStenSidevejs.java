@@ -25,6 +25,19 @@ public class TagStenSidevejs extends AppCompatActivity {
         EditText kontrol = (EditText) findViewById(R.id.kontrolmaal);
         Button hentmaal = (Button) findViewById(R.id.hentmaal);
 
+
+        if(max.getText().toString().trim().isEmpty() && min.getText().toString().trim().isEmpty()
+                && afstand.getText().toString().trim().isEmpty() && kontrol.getText().toString().trim().isEmpty()){
+            max.setText("0");
+            min.setText("0");
+            afstand.setText("0");
+            kontrol.setText("0");
+
+
+        }
+
+
+
         double tagStenMax = Double.parseDouble(max.getText().toString());
         double tagStenMin = Double.parseDouble(min.getText().toString());
         double tagAfstand = Double.parseDouble(afstand.getText().toString());
