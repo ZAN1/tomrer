@@ -4,15 +4,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/newicon"
         android:label="Tømrer Tool"
-        android:roundIcon="@mipmap/newicon"
-        android:hardwareAccelerated="true"
         android:largeHeap="true"
-
+        android:roundIcon="@mipmap/newicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".MainActivity">
@@ -45,7 +43,9 @@
         <activity android:name=".HandResult" />
         <activity android:name=".MesterMaterialer" />
         <activity android:name=".trekandt345.Trekandt345" />
-        <activity android:name=".trekandt345.Trekandt345result"></activity>
+        <activity android:name=".trekandt345.Trekandt345result" />
+        <activity android:name=".TagSten.TagStenSidevejs" />
+        <activity android:name=".TagSten.Tagcategory"></activity>
     </application>
 
 </manifest>

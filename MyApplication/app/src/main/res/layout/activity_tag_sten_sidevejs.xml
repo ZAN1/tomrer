@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tomrer.klisterdk.tomrer.TagSten.TagStenSidevejs"
+    android:weightSum="100"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:text="Sten max længde i Meter"
+        android:textAlignment="center"
+        android:textSize="27dp" />
+
+    <EditText
+        android:id="@+id/max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="eks. 0.30 M  "
+        android:inputType="numberDecimal"
+        android:background="#666666"
+        android:textAlignment="textEnd"
+        android:textSize="25dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:text="Sten Min længde i Metter"
+        android:textAlignment="center"
+        android:textSize="27dp"/>
+    <EditText
+        android:id="@+id/min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:background="#666666"
+        android:textAlignment="textEnd"
+        android:hint="eks. 0.289 M  "
+
+        android:textSize="25dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:text="afstand mellem vindskedesten"
+        android:textAlignment="center"
+        android:textSize="27dp"/>
+    <EditText
+        android:id="@+id/afstand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:background="#666666"
+        android:textAlignment="textEnd"
+        android:hint="eks. 25.774 M  "
+
+        android:textSize="25dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:text="Antal sten pr kontrolmål"
+        android:textAlignment="center"
+        android:textSize="27dp"/>
+    <EditText
+        android:id="@+id/kontrolmaal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:background="#666666"
+        android:textAlignment="textEnd"
+        android:hint="eks. 3  "
+
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/hentmaal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        android:text="Hent mål"/>
+
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+

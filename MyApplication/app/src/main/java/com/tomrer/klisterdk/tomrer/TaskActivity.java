@@ -1,12 +1,13 @@
 package com.tomrer.klisterdk.tomrer;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.tomrer.klisterdk.tomrer.TagSten.Tagcategory;
 import com.tomrer.klisterdk.tomrer.trekandt345.Trekandt345;
 
 public class TaskActivity extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class TaskActivity extends AppCompatActivity {
 
         TextView lofter = (TextView) findViewById(R.id.hloft);
         TextView trekandt = (TextView) findViewById(R.id.trekandt);
+        TextView tag = (TextView) findViewById(R.id.tag);
 
         lofter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +43,13 @@ public class TaskActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                Intent intent = new Intent(TaskActivity.this, Trekandt345.class);
+                startActivity(intent);
+            }
+        });
+        tag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TaskActivity.this, Tagcategory.class);
                 startActivity(intent);
             }
         });
