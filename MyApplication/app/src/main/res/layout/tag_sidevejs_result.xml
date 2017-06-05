@@ -3,6 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,23 +17,40 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="one"
-        android:textSize="30dp"/>
+        android:text="kontrolmål"
+        android:textSize="30dp"
+       />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"
+            android:id="@+id/kontrolresult"/>
     <TextView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="one"
+        android:text="antal sten"
         android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/antalstenresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"/>
     <TextView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="one"
+        android:text="mål for sten"
         android:textSize="30dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="one"
-        android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/nytstenmaalresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"/>
+
     </LinearLayout>
 
 
