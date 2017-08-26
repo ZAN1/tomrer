@@ -7,11 +7,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tomrer.klisterdk.tomrer.MainActivity;
 import com.tomrer.klisterdk.tomrer.R;
 
 public class TagStenSidevejs extends AppCompatActivity {
@@ -119,16 +117,16 @@ public class TagStenSidevejs extends AppCompatActivity {
                         nytmaal.setText(String.valueOf(nyStenMaal) + " M ");
                         antal.setText(String.valueOf(antalSten) + " Stk. ");
 
-                        ImageView goFront = (ImageView) findViewById(R.id.homeh);
-
-                        goFront.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent intent = new Intent(TagStenSidevejs.this,MainActivity.class);
-
-                                startActivity(intent);
-                            }
-                        });
+//                        ImageView goFront = (ImageView) findViewById(R.id.homeh);
+//
+//                        goFront.setOnClickListener(new View.OnClickListener() {
+//                            @Override
+//                            public void onClick(View v) {
+//                                Intent intent = new Intent(TagStenSidevejs.this,MainActivity.class);
+//
+//                                startActivity(intent);
+//                            }
+//                        });
                     }
                 }
             });
@@ -140,15 +138,15 @@ public class TagStenSidevejs extends AppCompatActivity {
 
 
 
-        ImageView goFront = (ImageView) findViewById(R.id.homeh);
-
-        goFront.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TagStenSidevejs.this,MainActivity.class);
-
-                startActivity(intent);
-            }
-        });
+//        ImageView goFront = (ImageView) findViewById(R.id.homeh);
+//
+//        goFront.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(TagStenSidevejs.this,MainActivity.class);
+//
+//                startActivity(intent);
+//            }
+//        });
     }
 }

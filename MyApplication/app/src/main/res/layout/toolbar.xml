@@ -17,40 +17,42 @@
         android:layout_weight="100"
         >
 
-        <ImageView
+      <!--  <ImageView
 
             android:id="@+id/imageView"
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:src="@drawable/newicon"
-            android:layout_weight="0"/>
+            android:layout_weight="0"/> -->
 
         <TextView
 
 
             android:id="@+id/home"
-            android:background="@drawable/maale"
+            android:background="@drawable/toolbar"
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:layout_weight="100"
 
             android:gravity="center_vertical"
+            android:textStyle="bold"
             android:text="Tømrer Tool"
+            
             android:textAlignment="center"
             android:textColor="#ffffff"
-            android:textSize="18dp" />
+            android:textSize="24dp" />
 
-        <ImageView
-            android:id="@+id/homeh"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:src="@drawable/home"
-            android:layout_weight="0"
-            android:background="#E2B100"
-            />
+        <!--  <ImageView
+              android:id="@+id/homeh"
+              android:layout_width="72dp"
+              android:layout_height="72dp"
+              android:src="@drawable/home"
+              android:layout_weight="0"
+              android:background="#E2B100"
+              /> -->
 
-    </LinearLayout>
-</LinearLayout>
+      </LinearLayout>
+  </LinearLayout>
 
 
 

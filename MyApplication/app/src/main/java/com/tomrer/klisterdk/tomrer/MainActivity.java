@@ -6,7 +6,6 @@ import android.opengl.GLES10;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.crashlytics.android.Crashlytics;
@@ -32,16 +31,16 @@ public class MainActivity extends AppCompatActivity {
 
         TextView handvarker = (TextView) findViewById(R.id.handvarker);
         TextView mester = (TextView) findViewById(R.id.mester);
-        ImageView goFront = (ImageView) findViewById(R.id.homeh);
+        //ImageView goFront = (ImageView) findViewById(R.id.homeh);
 
-        goFront.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MainActivity.class);
-
-                startActivity(intent);
-            }
-        });
+//        goFront.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,MainActivity.class);
+//
+//                startActivity(intent);
+//            }
+//        });
 
         mester.setOnClickListener(new View.OnClickListener(){
 
