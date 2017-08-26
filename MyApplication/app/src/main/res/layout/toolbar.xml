@@ -29,7 +29,7 @@
 
 
             android:id="@+id/home"
-            android:background="@drawable/toolbar"
+            android:background="@drawable/topbarlogo"
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:layout_weight="100"
@@ -42,14 +42,14 @@
             android:textColor="#ffffff"
             android:textSize="24dp" />
 
-        <!--  <ImageView
+          <ImageView
               android:id="@+id/homeh"
               android:layout_width="72dp"
               android:layout_height="72dp"
-              android:src="@drawable/home"
+              android:src="@drawable/newicon"
               android:layout_weight="0"
-              android:background="#E2B100"
-              /> -->
+
+              />
 
       </LinearLayout>
   </LinearLayout>
