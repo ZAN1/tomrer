@@ -20,43 +20,52 @@
         />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="100"
-
-        >
 
 
-        <TextView
-            android:id="@+id/handvarker"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
 
-            android:gravity="center_vertical"
+
+
+
+            >
+        <TextView
+            android:id="@+id/handvarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
             android:text="Håndværker"
-android:background="#a3a3c2"
-
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/getbutton"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginTop="15dp"
             android:textAlignment="center"
-            android:textSize="42dp" />
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/mester"
-            android:gravity="center_vertical"
+            android:gravity="center"
             android:textAlignment="center"
-            android:textSize="42dp"
-            android:layout_width="match_parent"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mester/Konstruktør"
-            android:background="#666699"/>
+            android:text="Mester/ Konstruktør"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginTop="2.5dp"
 
-
-
-
-
-
+            android:background="@drawable/getbutton"/>
 
     </LinearLayout>
 

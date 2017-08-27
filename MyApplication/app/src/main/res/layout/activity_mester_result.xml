@@ -19,13 +19,14 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Væg 1"
+                android:text="1. væg"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                  />
 
@@ -44,10 +45,38 @@
 
                 android:layout_weight="1" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:src="@drawable/t2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/t2"
+                android:layout_weight="0.5"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                 />
+            <ImageView
+                android:src="@drawable/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/t1"
+                android:layout_weight="0.5"
+                 />
+        </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:layout_gravity="center"
             android:layout_weight="1">
             <TextView
@@ -71,39 +100,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-            <ImageView
-                android:src="@drawable/t2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/t2"
-                android:layout_weight="0.5"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:gravity="center"
-                android:background="@android:color/holo_blue_dark" />
-            <ImageView
-                android:src="@drawable/t1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:id="@+id/t1"
-                android:layout_weight="0.5"
-                android:background="@android:color/holo_red_dark" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:layout_weight="1"
             android:gravity="center">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Væg 2"
+                android:text="2. væg"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/wall1i"
                 android:layout_weight="1" />
@@ -122,11 +126,42 @@
                 android:id="@+id/kanttext"
                 android:layout_weight="1" />
         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:src="@drawable/tt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tt2"
+                android:layout_weight="0.5"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                 />
+            <ImageView
+                android:src="@drawable/tt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tt1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_weight="0.5"
+
+                android:layout_gravity="center" />
+
+        </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:layout_weight="1">
             <TextView
                 android:layout_width="match_parent"
@@ -147,35 +182,6 @@
 
                 android:layout_weight="0.5" />
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-            <ImageView
-                android:src="@drawable/tt2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tt2"
-                android:layout_weight="0.5"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:gravity="center"
-                android:background="@android:color/holo_blue_dark" />
-            <ImageView
-                android:src="@drawable/tt1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tt1"
-                android:gravity="center"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:layout_weight="0.5"
-                android:background="@android:color/holo_red_dark"
-                android:layout_gravity="center" />
-
-        </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -185,9 +191,17 @@
             android:id="@+id/mestermaterialer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/getbutton"
             android:layout_weight="0.5"
-            android:text="Hent Materiale Liste"
-            android:layout_margin="0dp"/>
+            android:text="Hent materialeliste"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+
+            />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

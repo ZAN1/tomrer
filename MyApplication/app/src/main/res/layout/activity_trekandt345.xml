@@ -116,9 +116,11 @@
     <Button
         android:id="@+id/findmal"
         android:layout_width="200dp"
+        android:background="@drawable/hentbutton"
         android:layout_height="48dp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
-        android:text="Find mål"/>
+        android:text="Hent mål"
+        android:textAllCaps="false"/>
 </LinearLayout>
 </LinearLayout>

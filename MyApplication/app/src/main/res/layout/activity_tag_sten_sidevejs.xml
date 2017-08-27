@@ -28,16 +28,17 @@
 
         android:layout_width="match_parent"
         android:layout_height="30dp"
-
-        android:text="Sten max længde i Meter"
+        android:textColor="#ffffff"
+        android:text="Sten max bredde i meter"
         android:textAlignment="center"
         android:textSize="27dp" />
 
     <EditText
+        android:textColor="#ffffff"
         android:id="@+id/max"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="eks. 0.30 M  "
+        android:hint="eks. 0.30 m  "
         android:inputType="numberDecimal"
         android:background="#666666"
         android:textAlignment="textEnd"
@@ -46,40 +47,45 @@
 
 
     <TextView
+        android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="30dp"
 
-        android:text="Sten Min længde i Metter"
+        android:text="Sten min bredde i meter"
         android:textAlignment="center"
         android:textSize="27dp"/>
     <EditText
+        android:textColor="#ffffff"
         android:id="@+id/min"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:background="#666666"
         android:textAlignment="textEnd"
-        android:hint="eks. 0.289 M  "
+        android:hint="eks. 0.289 m  "
 
         android:textSize="25dp"/>
     <TextView
+        android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="30dp"
 
-        android:text="afstand mellem vindskedesten"
+        android:text="Afstand mellem start/slutsten"
         android:textAlignment="center"
         android:textSize="27dp"/>
     <EditText
+        android:textColor="#ffffff"
         android:id="@+id/afstand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:background="#666666"
         android:textAlignment="textEnd"
-        android:hint="eks. 25.774 M  "
+        android:hint="eks. 25.774 m  "
 
         android:textSize="25dp"/>
     <TextView
+        android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="30dp"
 
@@ -87,6 +93,7 @@
         android:textAlignment="center"
         android:textSize="27dp"/>
     <EditText
+        android:textColor="#ffffff"
         android:id="@+id/kontrolmaal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -98,16 +105,18 @@
         android:textSize="25dp"/>
 
     <Button
+        android:textColor="#ffffff"
         android:id="@+id/hentmaal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:textAlignment="center"
         android:padding="4dp"
-
+        android:textAllCaps="false"
         android:textSize="27dp"
         android:text="Hent mål"/>
 
     <TextView
+        android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Denne funktion er ikke færdig.
