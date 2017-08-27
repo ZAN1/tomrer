@@ -112,6 +112,10 @@
         android:textAlignment="center"
         android:padding="4dp"
         android:textAllCaps="false"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/hentbutton"
         android:textSize="27dp"
         android:text="Hent mål"/>
 
@@ -119,6 +123,7 @@
         android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:text="Denne funktion er ikke færdig.
 Alle mål er i Meter.
 Der er ikke lavet løsning endnu hvis du kommer under min. mål på sten.
