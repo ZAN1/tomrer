@@ -38,7 +38,7 @@
         android:id="@+id/max"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="eks. 0.30 m  "
+        android:hint="eks. 30.0 cm  "
         android:inputType="numberDecimal"
         android:background="#666666"
         android:textAlignment="textEnd"
@@ -62,7 +62,7 @@
         android:inputType="numberDecimal"
         android:background="#666666"
         android:textAlignment="textEnd"
-        android:hint="eks. 0.289 m  "
+        android:hint="eks. 28.9 cm  "
 
         android:textSize="25dp"/>
     <TextView
@@ -100,7 +100,7 @@
         android:inputType="numberDecimal"
         android:background="#666666"
         android:textAlignment="textEnd"
-        android:hint="eks. 3  "
+        android:hint="eks. Pr 3. sten  "
 
         android:textSize="25dp"/>
 
