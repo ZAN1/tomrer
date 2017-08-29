@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tomrer.klisterdk.tomrer.Lofter.Gips.LoftMenu"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+
+
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <LinearLayout
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+    <TextView
+        android:id="@+id/hloft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Akustikloft 60 x 60"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/getbutton"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

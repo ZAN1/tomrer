@@ -25,11 +25,11 @@
 
 
             <TextView
-                android:id="@+id/hloft"
+                android:id="@+id/loftmenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="Akustikloft 60 x 60"
+                android:text="Lofter"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/getbutton"
                 android:textStyle="bold"

@@ -45,7 +45,9 @@
         <activity android:name=".trekandt345.Trekandt345" />
         <activity android:name=".trekandt345.Trekandt345result" />
         <activity android:name=".TagSten.TagStenSidevejs" />
-        <activity android:name=".TagSten.Tagcategory"></activity>
+        <activity android:name=".TagSten.Tagcategory" />
+        <activity android:name=".Gips.GipsLoft" />
+        <activity android:name=".Lofter.Gips.LoftMenu"></activity>
     </application>
 
 </manifest>
