@@ -21,7 +21,7 @@ public class GipsLoftResult extends AppCompatActivity {
         double Loftlaengde = LoftlaengdeMeter * 100;// går fra meter til cm
         double pladeStorelse = 90;
 
-        
+
 
 
 
