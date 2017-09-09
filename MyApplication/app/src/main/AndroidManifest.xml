@@ -47,7 +47,8 @@
         <activity android:name=".TagSten.TagStenSidevejs" />
         <activity android:name=".TagSten.Tagcategory" />
         <activity android:name=".Gips.GipsLoft" />
-        <activity android:name=".Lofter.Gips.LoftMenu"></activity>
+        <activity android:name=".Lofter.Gips.LoftMenu" />
+        <activity android:name=".Gips.GipsLoftResult"></activity>
     </application>
 
 </manifest>
