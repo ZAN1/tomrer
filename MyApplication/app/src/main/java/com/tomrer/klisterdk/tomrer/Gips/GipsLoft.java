@@ -25,10 +25,14 @@ public class GipsLoft extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent Loftdeling = new Intent(GipsLoft.this , GipsLoftResult.class );
+                Intent sammeside = new Intent(GipsLoft.this,GipsLoft.class);
                 GetSetGipsLoft getsetlaengde = new GetSetGipsLoft();
                 String laengde = gipsLoftLaengde.getText().toString();
+                if(laengde.trim().isEmpty()){
 
-                if(gipsLoftLaengde != null){
+                    startActivity(sammeside);
+
+                }else {
                     getsetlaengde.setLaengde(laengde);
                     startActivity(Loftdeling);
 

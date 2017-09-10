@@ -32,7 +32,7 @@
                 android:layout_marginTop="0dp"
                 android:textAlignment="center"
                 android:textColor="#ffffffff"
-                android:text="Loft længde"
+                android:text="Loft længde i meter"
                 android:textSize="18dp"
 
             />
@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
-                
+                android:textColor="#ffffffff"
                 android:textAlignment="center"
                 android:hint="Længde af loft."
                 android:layout_marginLeft="50dp"
@@ -56,6 +56,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hent mål"
+                android:textSize="42dp"
+                android:textColor="#ffffffff"
+                android:background="@drawable/hentbutton"
                 android:textAllCaps="false"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="50dp"
