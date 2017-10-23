@@ -109,6 +109,24 @@
             android:layout_centerVertical="true"
             android:layout_alignEnd="@+id/textView2"
             android:layout_marginEnd="95dp" />
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lillec"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="12dp"
+            android:hint=""
+            android:id="@+id/bigA"/>
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:id="@+id/bigB"
+            android:layout_alignTop="@+id/lillec"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginStart="26dp" />
+
+
 
 
     </RelativeLayout>

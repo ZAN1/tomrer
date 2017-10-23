@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.tomrer.klisterdk.tomrer.R;
 
@@ -49,15 +50,27 @@ public class Trekandt345 extends AppCompatActivity {
                 EditText b = (EditText) findViewById(R.id.lilleb);
                 EditText c = (EditText) findViewById(R.id.lillec);
 
+                char sign = 0x00B0;
+
                 double a1 = Double.parseDouble(a.getText().toString());
                 double b1 = Double.parseDouble(b.getText().toString());
                 double c1 = Double.parseDouble(c.getText().toString());
                 if (a.getText() != null && b1 == 0 && c1 == 0){
 
                     scale =  a1 / 3 ;
-
+                    b1 = scale * 4;
+                    c1 = scale * 5;
                     b.setText(Double.toString(scale * 4));
                     c.setText(Double.toString(scale * 5));
+                  double degreeA =  Math.toDegrees(Math.asin(Math.toRadians(a1) / (Math.toRadians(c1))));
+                    degreeA = Math.round(degreeA * 100.0)/100.0;
+                    TextView bigA = (TextView) findViewById(R.id.bigA);
+                    bigA.setText(Double.toString(degreeA )+ sign);
+
+                    double degreeB = Math.toDegrees(Math.asin( Math.toRadians(b1) / Math.toRadians(c1)));
+                    degreeB = Math.round(degreeB * 100.0)/100.0;
+                    TextView bigB = (TextView) findViewById(R.id.bigB);
+                    bigB.setText(Double.toString(degreeB )+ sign);
 
                 }else if(b.getText() != null && a1 == 0 && c1 == 0){
 
