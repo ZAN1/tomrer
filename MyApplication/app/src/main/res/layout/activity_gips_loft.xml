@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tomrer.klisterdk.tomrer.Gips.GipsLoft"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    tools:context="com.tomrer.klisterdk.tomrer.Gips.GipsLoft">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <include layout="@layout/toolbar"
+
+        <include
+            layout="@layout/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="45dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
 
-        android:orientation="vertical">
+            android:orientation="vertical">
 
 
             <TextView
@@ -30,27 +32,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
+                android:text="Loft længde"
                 android:textAlignment="center"
                 android:textColor="#ffffffff"
-                android:text="Loft længde"
                 android:textSize="18dp"
 
-            />
+                />
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                
-                android:textAlignment="center"
-                android:hint="Længde af loft."
                 android:layout_marginLeft="50dp"
+
                 android:layout_marginRight="50dp"
-                android:inputType="numberDecimal" />
+                android:hint="Længde af loft."
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/button"
+                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Button" />
