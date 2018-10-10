@@ -62,12 +62,12 @@ public class Trekandt345 extends AppCompatActivity {
                     c1 = scale * 5;
                     b.setText(Double.toString(scale * 4));
                     c.setText(Double.toString(scale * 5));
-                  double degreeA =  Math.toDegrees(Math.asin(Math.toRadians(a1) / (Math.toRadians(c1))));
+                  double degreeA =  Math.toDegrees(Math.asin(a1 / (c1)));
                     degreeA = Math.round(degreeA * 100.0)/100.0;
                     TextView bigA = (TextView) findViewById(R.id.bigA);
                     bigA.setText(Double.toString(degreeA )+ sign);
 
-                    double degreeB = Math.toDegrees(Math.asin( Math.toRadians(b1) / Math.toRadians(c1)));
+                    double degreeB = Math.toDegrees(Math.asin( b1 / c1));
                     degreeB = Math.round(degreeB * 100.0)/100.0;
                     TextView bigB = (TextView) findViewById(R.id.bigB);
                     bigB.setText(Double.toString(degreeB )+ sign);
