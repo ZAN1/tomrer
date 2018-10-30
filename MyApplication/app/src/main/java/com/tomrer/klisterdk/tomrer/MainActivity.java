@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         //Fabric.with(this, new Crashlytics());
-        int[] maxTextureSize = new int[1];
-        GLES10.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
+       // int[] maxTextureSize = new int[1];
+      //  GLES10.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
 
 
         TextView handvarker = (TextView) findViewById(R.id.handvarker);
