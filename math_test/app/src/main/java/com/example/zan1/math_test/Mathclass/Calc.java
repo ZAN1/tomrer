@@ -59,7 +59,7 @@ public class Calc {
 
     public double kant_Plade_Mid_mid(double wall_Length){
 
-        double kant_Plade = (divedeBy2(wall_Length)*100)-(Math.floor(((divedeBy2(wall_Length) * 100) - 30)/60)*60);
+        double kant_Plade = ((divedeBy2(wall_Length)*100)-30) - Math.floor((((divedeBy2(wall_Length) * 100) - 30)/60))*60;
 
         return kant_Plade;
     }
